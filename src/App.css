@@ -1,0 +1,12 @@
+:root{
+    --bg:#F0F0F1;
+    --violet:#4B4190;
+    --orange:#F15C4A;
+    --headTxt:rgba(0,0,0,0.9);
+    --secondTxt:rgba(0,0,0,0.5);
+    --whiteTxt:#FFFFFF;
+    --lightTxt:rgba(250,250,250,0.6);
+}
+body{
+    background-color: var(--bg);
+}

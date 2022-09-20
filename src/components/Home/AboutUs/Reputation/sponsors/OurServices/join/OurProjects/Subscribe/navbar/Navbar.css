@@ -1,0 +1,38 @@
+.listLinks{    
+    background: #EEEEEE;
+    box-shadow: 7px 5px 15px rgba(13, 39, 80, 0.16), inset -20px -20px 32px rgba(255, 255, 255, 0.64);   
+    border-radius: 8px;
+}
+.nav-button{
+background: #4B4190;
+color: var(--lightTxt) !important;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -23px -23px 45px #FFFFFF;
+}
+.listLinks:hover{    
+    background: #EEEEEE;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 13px 10px 30px rgba(13, 39, 80, 0.16), inset -31px -31px 43px rgba(255, 255, 255, 0.64);    border-radius: 8px;
+}
+.nav-button:hover{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), -13px -13px 25px #FFFFFF;
+    transform: translateY(1px);
+    transition: all 0.5s ease-in-out;
+}
+.listLinks li{
+    text-transform: capitalize;
+
+}
+.listLinks li a{
+    color: #4c419093 !important;
+}
+.listLinks li:hover a{
+    text-transform: capitalize;
+    color: #4B4190 !important;
+    font-weight: 500;
+
+}
+.listLinks li a.active{    
+    color: #4B4190 !important;
+    font-weight: 500;
+
+}
