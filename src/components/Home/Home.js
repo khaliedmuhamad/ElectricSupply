@@ -14,11 +14,12 @@ let homeLang = multilang(Language).home;
         </div>
         <div className='container h-100'>
             <div className='d-flex flex-column flex-sm-row h-100 justify-content-between align-items-center'>
-                <div className='col-6 home-left'>
+                <div className='col-12 col-sm-6 text-center text-sm-left home-left'>
                     <h3>{homeLang.headfirst }</h3>
-                    <h1>{homeLang.headsecond[0]}<br />
-                    {homeLang.headsecond[1]}<br />
-                    {homeLang.headsecond[2]}
+                    <h1>
+                <span className='d-inline'>    {homeLang.headsecond[0]}</span>
+                <span className='d-inline'>     {homeLang.headsecond[1]}</span>
+                <span className='d-inline'>      {homeLang.headsecond[2]}</span> 
                     </h1>
                     <p>{homeLang.paragraph}</p>
                 </div>
