@@ -1,0 +1,41 @@
+.reputation-card{
+padding: 20px 18px;
+height: 250px;
+background: #FFFFFF;
+box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01), 27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09), 3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+border-radius: 32px;
+}
+.reputation-card-icon:nth-of-type(1){
+    filter:drop-shadow(0px 0px 3px #4B4190);
+}
+.reputation-card-icon{
+    width: 64px;
+}
+.reputation-card-icon svg{
+    width: 100%;
+    height: 64px;
+}
+.reputation-card-head{
+margin-top: 28px;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+color: var(--violet);
+}
+.reputation-card-paragraph{
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--secondTxt);
+    
+}
+.head-section{
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+
+color: var(--lighviolet);
+}
