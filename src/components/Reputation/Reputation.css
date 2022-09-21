@@ -5,9 +5,7 @@ background: #FFFFFF;
 box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01), 27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09), 3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 border-radius: 32px;
 }
-.reputation-card-icon:nth-of-type(1){
-    filter:drop-shadow(0px 0px 3px #4B4190);
-}
+
 .reputation-card-icon{
     width: 64px;
 }
