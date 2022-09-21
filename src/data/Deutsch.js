@@ -24,4 +24,11 @@ export const Deutsch = {
       "Lorem Ipsum ist einfach Blindtext des Drucks",
     ],
   },
+  about:{
+    top:{head:"Über uns",paragraph:"Lorem Ipsum ist einfach Dummy-Text der Druck- und Setzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein Unbekannter"},
+    botttom:{
+      head:["40M KUNDEN","100KM LEITUNGEN","8M W LEISTUNG","800M DOLLAR"],
+      paragraph:["Lorem Ipsum ist einfach Blindtext des Drucks","Lorem Ipsum ist einfach Blindtext des Drucks","Lorem Ipsum ist einfach Blindtext des Drucks","Lorem Ipsum ist einfach Blindtext des Drucks"]
+    }
+  }
 };

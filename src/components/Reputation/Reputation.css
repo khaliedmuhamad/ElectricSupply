@@ -28,12 +28,3 @@ color: var(--violet);
     color: var(--secondTxt);
     
 }
-.head-section{
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 38px;
-/* identical to box height */
-
-color: var(--lighviolet);
-}

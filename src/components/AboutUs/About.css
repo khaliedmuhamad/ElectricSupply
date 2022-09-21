@@ -1,0 +1,70 @@
+.about {
+  height: 80vh;
+}
+.about-right {
+}
+.paragraph-top-about {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--headTxt);
+}
+.about-strength-head {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  color: var(--headTxt);
+
+  position: relative;
+}
+.about-strength-head::after {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 20%;
+  height: 5px;
+  background: #e9a296;
+  animation: lining 2s linear infinite;
+}
+@keyframes lining {
+  0% {
+    width: 20%;
+    opacity: 1;
+    height: 5px;
+  }
+  50% {
+    width: 25%;
+    opacity: 0.7;
+    height: 4.5px;
+  }
+  100% {
+    width: 20%;
+    opacity: 1;
+    height: 5px;
+  }
+}
+.about-strength-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondTxt);
+}
+
+/* Responsive home */
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/*/ Small devices (landscape phones, 576px and up) */
+
+/*/ Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .about-strength-head {
+    font-size: 24px;
+    line-height: 48px;
+  }
+  .about-strength-paragraph {
+    font-size: 13px;
+  }
+}

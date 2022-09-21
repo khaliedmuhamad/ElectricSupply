@@ -13,6 +13,7 @@ export const LandingPage = () => {
     <Home lang={Lang} />
     <Reputation lang={Lang} />
     <About lang={Lang} />
+    <About lang={Lang} />
     </>
   )
 }
