@@ -42,6 +42,11 @@ export const Deutsch = {
         ,"Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. Id Freude schöner"]
     }
   },
+  join:{
+    head:" 1500er Jahre, als ein unbekannter Drucker die",
+    paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    button:"JETZT MIT DEM LEBEN VERBINDEN"
+  },
   projects:{
     header:"Unsere Projekte",
     info:{
@@ -54,5 +59,19 @@ export const Deutsch = {
         ,"Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport"
       ]
     }
+  },
+  subscripe:{
+    head:"Newsletter abonnieren",
+    paragraph:"Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen",
+    placeholder:"Geben Sie hier Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste"
+  },
+  footer:{
+    top:{
+      head:["Geschäftszeiten","Kontakt"],
+      paragraph1:["Samstag - Donnerstag","077 8574 2792"],
+      paragraph2:["9AM - 5PM","Connect@company.com"]
+    },
+    head2:"Hinterlass eine Nachricht",
+    placeholder:"Geben Sie hier Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste"
   }
 };

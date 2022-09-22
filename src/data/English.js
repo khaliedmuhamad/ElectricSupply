@@ -58,6 +58,20 @@ export const English = {
         ,"Mauris pellentesque pulvinar pellentesque habitant morbi. In hac habitasse platea dictumst quisque sagittis purus. Lacus sed viverra."
         ,"Quis enim lobortis scelerisque fermentum dui faucibus. Facilisi nullam vehicula ipsum a. Sed adipiscing diam donec adipiscing tristique risus.",
       ]
+    }},
+    subscripe:{
+      head:"Subscribe Newletter",
+      paragraph:" 1500s, when an unknown printer took unknown printer ",
+      placeholder:"Put your email here and Prss Enter"
+    },
+    footer:{
+      top:{
+        head:["Office Hours","Contact"],
+        paragraph1:["Satuerday  - Thusday","077 8574 2792"],
+        paragraph2:["9AM - 5PM","Connect@company.com"]
+      },
+      head2:"Leave a Message",
+      placeholder:"Put your email here and Prss Enter"
     }
-  },
+  
 };
