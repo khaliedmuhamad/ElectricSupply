@@ -33,7 +33,7 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
                     </div>
                 </div>
                 <div className='right  col-md-8 col-12'>
-                    <div className='right-overlay  px-5'>
+                    <div className='right-overlay  px-md-5 px-0'>
                     <div className='top'>
                         <div className='d-flex'>
                             <div className='col-6'>
