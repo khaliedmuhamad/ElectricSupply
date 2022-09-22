@@ -408,7 +408,7 @@ export const subscripe = <svg width="100%" height="auto" viewBox="0 0 503 614" f
 </defs>
 </svg>
 
-export const footerBrand = <svg width="83" height="410" viewBox="0 0 83 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const footerBrand = <svg width="83" height="5%" viewBox="0 0 83 auto" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_28_108)">
 <path d="M58.0788 58.0996C67.431 48.7474 67.431 33.5846 58.0788 24.2324C48.7267 14.8803 33.5638 14.8803 24.2117 24.2324C14.8595 33.5846 14.8595 48.7474 24.2117 58.0996C33.5638 67.4518 48.7267 67.4518 58.0788 58.0996Z" fill="white" fill-opacity="0.5"/>
 <path d="M41.0162 47.5508H21.3374L44.2563 2.57129L41.0162 34.939H60.8524L37.9351 79.7434L41.0162 47.5508Z" fill="white"/>

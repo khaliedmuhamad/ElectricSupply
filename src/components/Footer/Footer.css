@@ -1,0 +1,61 @@
+.footer{
+    position: relative;
+    background-image: url("/public/images/maps.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.conatent{
+    z-index: 1;
+    width: 75%;
+    inset: 0  0;
+    border-radius: 0 100px 0 0;
+    background-color: #270085;
+}
+
+.social-footer-items a{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+}
+.social-footer-items:hover a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.social-footer-items:hover{
+    transform: scale(1.12);
+    transition: all 0.1s  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.social-footer-items:active{
+    transform: scale(1.2);
+}
+.right-top-head{
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+}
+.right-top-paragraph{
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+color: rgba(255, 255, 255, 0.67);
+}
+@media (max-width: 576px) {    
+    .right-top-head{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        }
+        .right-top-paragraph{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 21px;
+        }
+        .form-control::placeholder{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
+        }
+}
