@@ -10,7 +10,6 @@
 }
 body{
     background-color: var(--bg);
-    height: 1000vh;
 }
 .head-section{
     font-style: normal;
