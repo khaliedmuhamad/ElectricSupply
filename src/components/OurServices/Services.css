@@ -1,0 +1,103 @@
+.service-card{
+
+}
+ .card-overlay{
+    background: #FFFFFF;
+    box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01), 27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09), 3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    height: 30vh;
+    color: var(--violet);
+    position: relative;
+    z-index: 3 !important;
+}
+
+.big-rect  .card-overlay{
+    height: 63vh;
+}
+.card-overlay .services-icon{
+    font-size: 2rem;
+}
+.card-overlay .services-head{
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+}
+.big-rect .card-overlay .services-icon{
+    font-size: 8rem;
+    border-bottom: 5px  solid var(--bg);
+}
+.big-rect .card-overlay .services-head{
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+color: #270085;
+}
+.big-rect .card-overlay .services-paragraph{
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+.small-rects .card-overlay.active{
+    background: #270085;
+    box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01), 27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09), 3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+} 
+.small-rects  .card-overlay:hover{
+    background: #a9a2ba;
+    box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01), 27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09), 3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.big-rect .card-overlay{
+    transition: all 0.5s ease;
+    padding: 0 2rem;
+
+}
+
+/* Responsive home */
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/*/ Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .card-overlay{
+        height: 10vh;
+    }
+    .card-overlay .services-head{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: capitalize;
+        }
+        .card-overlay{
+            height: 25vh;
+        }
+        .big-rect .card-overlay .services-icon{
+            font-size: 4rem;
+        }
+        .big-rect .card-overlay .services-head{
+        font-size: 16px;
+        }
+        .big-rect .card-overlay .services-paragraph{
+        font-size: 12px;
+
+        }
+}
+
+/*/ Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .card-overlay{
+        height: 25vh;
+    }
+    .big-rect  .card-overlay{
+        height: 50vh;
+    }
+}
+

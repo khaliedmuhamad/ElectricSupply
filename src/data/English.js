@@ -30,5 +30,16 @@ export const English = {
       head:["40M CLIENTS","100KM LINES","8M W POWER","800M DOLARS"],
       paragraph:["Lorem Ipsum is simply dummy text of the printing","Lorem Ipsum is simply dummy text of the printing ","Lorem Ipsum is simply dummy text of the printing","Lorem Ipsum is simply dummy text of the printing"]
     }
+  },
+  services:{
+    header:"Our Services",
+    info:{
+      head:["Electricity Services Connection","Solar pv","training and education","After Sale Services"],
+      paragraph:[
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ," Enim sed faucibus turpis in eu mi bibendum. Pharetra convallis posuere morbi leo urna molestie at. Nulla pellentesque"
+        ,"Quis enim lobortis scelerisque fermentum dui faucibus. Facilisi nullam vehicula ipsum a. Sed adipiscing diam donec adipiscing tristique risus."
+        ,"Mauris pellentesque pulvinar pellentesque habitant morbi. In hac habitasse platea dictumst quisque sagittis purus. Lacus sed viverra."]
+    }
   }
 };
