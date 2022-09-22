@@ -41,5 +41,10 @@ export const English = {
         ,"Quis enim lobortis scelerisque fermentum dui faucibus. Facilisi nullam vehicula ipsum a. Sed adipiscing diam donec adipiscing tristique risus."
         ,"Mauris pellentesque pulvinar pellentesque habitant morbi. In hac habitasse platea dictumst quisque sagittis purus. Lacus sed viverra."]
     }
+  },
+  join:{
+    head:" 1500s, when an unknown printer took ",
+    paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    button:"CONNECT TO LIFE NOW"
   }
 };
