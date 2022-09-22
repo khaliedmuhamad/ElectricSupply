@@ -46,5 +46,18 @@ export const English = {
     head:" 1500s, when an unknown printer took ",
     paragraph:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     button:"CONNECT TO LIFE NOW"
-  }
+  },
+  projects:{
+    header:"Our Projects",
+    info:{
+      head:["High and long lines","hospitals","city connections","University","factory supply"],
+      paragraph:[
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ," Enim sed faucibus turpis in eu mi bibendum. Pharetra convallis posuere morbi leo urna molestie at. Nulla pellentesque",
+        ,"Quis enim lobortis scelerisque fermentum dui faucibus. Facilisi nullam vehicula ipsum a. Sed adipiscing diam donec adipiscing tristique risus.",
+        ,"Mauris pellentesque pulvinar pellentesque habitant morbi. In hac habitasse platea dictumst quisque sagittis purus. Lacus sed viverra."
+        ,"Quis enim lobortis scelerisque fermentum dui faucibus. Facilisi nullam vehicula ipsum a. Sed adipiscing diam donec adipiscing tristique risus.",
+      ]
+    }
+  },
 };

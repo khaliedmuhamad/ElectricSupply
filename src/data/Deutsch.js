@@ -41,5 +41,18 @@ export const Deutsch = {
         ,"Deutsches Ipsum Dolor deserunt Glühwein has Zeitgeist Tollit Herr Doktor ius Welt Saepe Schadenfreude elaboraret Autobahn ne"
         ,"Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. Id Freude schöner"]
     }
+  },
+  projects:{
+    header:"Unsere Projekte",
+    info:{
+      head:["Hohe und lange Schlangeng","hospitals","Stadtverbindungen","Universität","Werksversorgung"],
+      paragraph:[
+        "Deutsches Ipsum Dolor deserunt Erbsenzähler has Schmetterling Tollit Goethe ius schnell Saepe Wiener Würstchen elaboraret",
+        ,"Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport"
+        ,"Deutsches Ipsum Dolor deserunt Glühwein has Zeitgeist Tollit Herr Doktor ius Welt Saepe Schadenfreude elaboraret Autobahn ne"
+        ,"Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. Id Freude schöner"
+        ,"Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport"
+      ]
+    }
   }
 };

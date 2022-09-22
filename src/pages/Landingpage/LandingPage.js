@@ -3,6 +3,7 @@ import { About } from '../../components/AboutUs/About'
 import { Home } from '../../components/Home/Home'
 import { Join } from '../../components/join/Join'
 import { Navbar } from '../../components/navbar/Navbar'
+import { Projects } from '../../components/OurProjects/Projects'
 import { Services } from '../../components/OurServices/Services'
 import Reputation from '../../components/Reputation/Reputation'
 import { Sponsors } from '../../components/sponsors/Sponsors'
@@ -20,6 +21,7 @@ export const LandingPage = () => {
 
     <Services lang={Lang} />
     <Join lang={Lang} />
+    <Projects  lang={Lang} />
     </>
   )
 }
