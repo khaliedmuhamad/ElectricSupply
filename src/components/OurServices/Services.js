@@ -15,27 +15,27 @@ export const Services = (props) => {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/750",
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/750",
 
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/750",
 
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/750",
 
     },
     {
@@ -72,6 +72,7 @@ export const Services = (props) => {
     paragraph: servicesData[0].paragraph[0],
     icon: servicesData[0].icon,
     index: 0,
+    imgSrc:servicesData[0].imgSrc
   });
   const changeContentBigRect = (e) => {
     SetBigEL({
@@ -79,6 +80,7 @@ export const Services = (props) => {
       paragraph: servicesData[e].paragraph[e],
       icon: servicesData[e].icon,
       index: e,
+      imgSrc:servicesData[e].imgSrc
     });
   };
   const servicesDataLength = servicesData.length - 1;
@@ -99,14 +101,15 @@ export const Services = (props) => {
       <div className="container">
         <h2 className="head-section text-center py-5">{servicesLang.header}</h2>
         <div className="d-flex  flex-md-row-reverse  flex-column ">
-          <div className="big-rect  col-12   col-md-6 p-2">
+          <div className="big-rect col-12 col-md-6 p-2">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
-              <div className="services-icon text-center">
+              <div className="services-icon text-center w-50">
               <img
-                            src={servicesLang.imgSrc}
+                            src={bigEl.imgSrc}
                             className="card-img-top mb-5 mt-5"
                             alt="card"
-                            height={"90%"}
+                            width={"100%"}
+
                           />
               </div>
               <h3 className="services-head mt-5">{bigEl.head}</h3>
