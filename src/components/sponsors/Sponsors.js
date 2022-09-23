@@ -9,7 +9,7 @@ import microsoft from "../../assets/images/microsoft.png";
 export const Sponsors = () => {
   const sponsorsData = [costco, amazone, power, tesco, microsoft];
   return (
-    <div className="sponsors py-5">
+    <section className="sponsors py-5">
       <div className="container">
         <div className="d-flex justify-content-center align-items-center">
           {!sponsorsData
@@ -30,6 +30,6 @@ export const Sponsors = () => {
               })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

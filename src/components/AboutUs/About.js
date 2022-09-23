@@ -17,7 +17,7 @@ export const About = (props) => {
   ];
 
   return (
-    <div className="about py-5 mt-3">
+    <section className="about py-5 mt-3">
       <div className="container">
         <div className="d-flex flex-column-reverse flex-md-row">
           <div className="about-left col-10 col-md-5 align-self-center mx-md-0 mx-auto align-self-lg-end ">
@@ -53,6 +53,6 @@ export const About = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

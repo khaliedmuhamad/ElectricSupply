@@ -10,7 +10,7 @@ export const Footer = (props) => {
 
 const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
   return (
-    <div className='footer '>
+    <footer className='footer '>
 
         <div className='conatent py-5'>
             <div className='container py-5'>
@@ -64,6 +64,6 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
             </div>
             </div>
         </div>
-    </div>
+    </footer>
   )
 }

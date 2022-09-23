@@ -81,7 +81,7 @@ export const Services = (props) => {
   }, [bigEl.index]);
 
   return (
-    <div className="services py-5">
+    <section className="services py-5">
       <div className="container">
         <h2 className="head-section text-center py-5">{servicesLang.header}</h2>
         <div className="d-flex  flex-md-row-reverse  flex-column ">
@@ -121,6 +121,6 @@ export const Services = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -6,7 +6,7 @@ export const Join = (props) => {
   const joinLang = multilang(Language).join;
 
   return (
-    <div className="join">
+    <section className="join">
       <div className="bg-overlay">
         <div className="container h-100">
           <div className="d-flex flex-column flex-md-row justify-content-center align-items-center h-100">
@@ -26,6 +26,6 @@ export const Join = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

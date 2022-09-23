@@ -73,7 +73,7 @@ export const Projects = (props) => {
   ];
 
   return (
-    <div className="projects  py-5">
+    <section className="projects  py-5">
       <div className="">
         <h2 className="head-section  text-center py-3 mb-5">
           {projectsLang.header}
@@ -131,6 +131,6 @@ export const Projects = (props) => {
               })}
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
