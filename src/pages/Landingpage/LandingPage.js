@@ -39,7 +39,7 @@ export const LandingPage = () => {
     if (isExistInStorage) {
       return savedLanguage;
     } else {
-      return "EN";
+      return "DE";
     }
   };
 
