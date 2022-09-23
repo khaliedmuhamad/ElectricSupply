@@ -15,41 +15,56 @@ export const Services = (props) => {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
+      imgSrc: "https://via.placeholder.com/150",
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
     {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
+      imgSrc: "https://via.placeholder.com/150",
+
     },
   ];
   const [bigEl, SetBigEL] = useState({
@@ -88,7 +103,7 @@ export const Services = (props) => {
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
               <div className="services-icon text-center">
               <img
-                            src="https://via.placeholder.com/150"
+                            src={el.imgSrc}
                             className="card-img-top mb-5 mt-5"
                             alt="card"
                             height={"90%"}
