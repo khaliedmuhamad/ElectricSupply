@@ -77,11 +77,10 @@ export const Deutsch = {
         "hospitals",
         "Stadtverbindungen",
         "Universität",
-        "Werksversorgung",
+        "Werksversorgung"
       ],
       paragraph: [
         "Deutsches Ipsum Dolor deserunt Erbsenzähler has Schmetterling Tollit Goethe ius schnell Saepe Wiener Würstchen elaboraret",
-        ,
         "Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport",
         "Deutsches Ipsum Dolor deserunt Glühwein has Zeitgeist Tollit Herr Doktor ius Welt Saepe Schadenfreude elaboraret Autobahn ne",
         "Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. Id Freude schöner",

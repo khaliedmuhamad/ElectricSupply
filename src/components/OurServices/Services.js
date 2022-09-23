@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { services } from "../../assets/images/svgGraphics";
 import { multilang } from "../functions/multilingual";
 import { FaSolarPanel } from "react-icons/fa";
 import { BsLifePreserver } from "react-icons/bs";
@@ -67,9 +66,9 @@ export const Services = (props) => {
       index: e,
     });
   };
+  const servicesDataLength = servicesData.length - 1;
 
   useEffect(() => {
-    const servicesDataLength = servicesData.length - 1;
     const interval = setInterval(() => {
       if (bigEl.index === servicesDataLength) {
         return changeContentBigRect(0);
@@ -78,7 +77,7 @@ export const Services = (props) => {
       }
     }, 3000);
     return () => clearInterval(interval);
-  }, [bigEl.index]);
+  }, [bigEl.index,bigEl,servicesDataLength]);
 
   return (
     <section className="services py-5">

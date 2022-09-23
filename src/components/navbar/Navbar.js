@@ -65,7 +65,7 @@ export const Navbar = (props) => {
                 dark ? "dark" : "light"
               } `}
               onClick={() => {
-                return props.setDark((prev) => !prev), setDark((p) => !p);
+                return props.setDark((prev) => !prev)  , setDark((p) => !p);
               }}
               style={dark ? { background: "#ff9900" } : { background: "" }}
             >
