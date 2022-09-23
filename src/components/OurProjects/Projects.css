@@ -1,64 +1,60 @@
-.media-overlay{
-    height: 40vh;
-    overflow: hidden;
-    width: 100%;
+.media-overlay {
+  height: 40vh;
+  overflow: hidden;
+  width: 100%;
 }
 .slick-arrow {
-height: 80%;
-background:linear-gradient(rgba(0, 0, 0, 0.1) ,  rgba(0, 0, 0, 0.01));
-width: 9rem;
-border-radius: 20px;
+  height: 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.01));
+  width: 9rem;
+  border-radius: 20px;
 }
-.slick-arrow.slick-prev{
-    top: 50%;
-    left: 2% !important;
-    z-index: 99999;
+.slick-arrow.slick-prev {
+  top: 50%;
+  left: 2% !important;
+  z-index: 99999;
 }
-.slick-arrow.slick-next{
-    right: 2%;
-    z-index: 99999;
-    top: 50%;
+.slick-arrow.slick-next {
+  right: 2%;
+  z-index: 99999;
+  top: 50%;
 }
-.card-body h3{
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 0.03em;
+.card-body h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
 }
-.card-body p{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+.card-body p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 
-    opacity: 0.5;
+  opacity: 0.5;
 }
-.slick-slide .card-body{
-    background: var(--bg);
-    color:black !important;
+.slick-slide .card-body {
+  background: var(--bg);
+  color: var(--headTxt) !important;
 }
-.slick-slide.slick-active.slick-current .card-body{
-    background: var(--violet);
-    color:white !important;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.slick-slide.slick-active.slick-current .card-body {
+  background: var(--textblue);
+  color: white !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.slick-slide.slick-active.slick-current  .project-card{
-    transform: scale(1.05) ;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    filter: grayscale(0);
+.slick-slide.slick-active.slick-current .project-card {
+  transform: scale(1.05);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: grayscale(0);
 }
-.slick-slide .project-card{
-    transform: scale(0.75) ;
-    filter: grayscale(1);
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+.slick-slide .project-card {
+  transform: scale(0.75);
+  filter: grayscale(1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media (max-width: 576px) {
-   
-}   
+}
 
 /*/ Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 }
-

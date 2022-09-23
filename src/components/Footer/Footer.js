@@ -53,11 +53,11 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
                         </div>
                     </div>
                     <div className='bottom'>
-                    <div class="mb-3">
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder={footerLang.placeholder} />
+                    <div className="mb-3">
+  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={footerLang.placeholder} />
 </div>
-<div class="mb-3">
-  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder={footerLang.placeholder} rows="3"></textarea>
+<div className="mb-3">
+  <textarea className="form-control" id="exampleFormControlTextarea1" placeholder={footerLang.placeholder} rows="3"></textarea>
 </div></div>
 </div>
                     </div>

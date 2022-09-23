@@ -2,12 +2,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './App.css';
-import { LandingPage } from './pages/Landingpage/LandingPage';
+import "./App.css";
+import { LandingPage } from "./pages/Landingpage/LandingPage";
 function App() {
-  console.log("first")
   return (
-    <div className="App">
+    <div className="App ">
       <LandingPage />
     </div>
   );

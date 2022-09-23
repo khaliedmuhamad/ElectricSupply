@@ -32,6 +32,26 @@ export const Services = (props) => {
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
     },
+    {
+      head: servicesLangHead[0],
+      paragraph: servicesLangPara,
+      icon: <TbPlugConnected />,
+    },
+    {
+      head: servicesLangHead[1],
+      paragraph: servicesLangPara,
+      icon: <FaSolarPanel />,
+    },
+    {
+      head: servicesLangHead[2],
+      paragraph: servicesLangPara,
+      icon: <VscBook />,
+    },
+    {
+      head: servicesLangHead[3],
+      paragraph: servicesLangPara,
+      icon: <BsLifePreserver />,
+    },
   ];
   const [bigEl, SetBigEL] = useState({
     head: servicesData[0].head,
@@ -47,9 +67,11 @@ export const Services = (props) => {
       index: e,
     });
   };
+
   useEffect(() => {
+    const servicesDataLength = servicesData.length - 1;
     const interval = setInterval(() => {
-      if (bigEl.index == 3) {
+      if (bigEl.index === servicesDataLength) {
         return changeContentBigRect(0);
       } else {
         return changeContentBigRect(bigEl.index + 1);
@@ -62,8 +84,8 @@ export const Services = (props) => {
     <div className="services py-5">
       <div className="container">
         <h2 className="head-section text-center py-5">{servicesLang.header}</h2>
-        <div className="d-flex  flex-md-row-reverse    flex-column ">
-          <div className="big-rect  col-12  col-md-6 p-2">
+        <div className="d-flex  flex-md-row-reverse  flex-column ">
+          <div className="big-rect  col-12   col-md-6 p-2">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
               <div className="services-icon text-center">{bigEl.icon}</div>
               <h3 className="services-head">{bigEl.head}</h3>
@@ -71,14 +93,14 @@ export const Services = (props) => {
             </div>
           </div>
           <div className="small-rects col-md-6 col-12">
-            <div className="d-flex flex-md-wrap  flex-nowrap">
+            <div className="d-flex flex-wrap">
               {!servicesData
                 ? ""
                 : servicesData.map((el, n) => {
                     return (
-                      <div className="service-card p-2 col-3 col-md-6 ">
+                      <div className="service-card p-2 col-3 col-md-6 " key={n}>
                         <div
-                          className={`card-overlay text-center w-100 d-flex flex-column justify-content-center align-items-center ${
+                          className={`card-overlay text-center w-100  d-flex flex-column justify-content-center align-items-center ${
                             n === bigEl.index ? "active" : ""
                           }`}
                           onClick={() => {

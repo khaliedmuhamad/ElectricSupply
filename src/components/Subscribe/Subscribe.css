@@ -1,17 +1,24 @@
-.subscribe  .top h3{
-margin-bottom: 4rem;
-font-style: normal;
-font-weight: 300;
-font-size: 40px;
-line-height: 48px;
-color: var(--violet);
-
+.subscribe .top h3 {
+  margin-bottom: 4rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--violet);
 }
-.subscribe  .top p{
-
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-opacity: 0.6;
-
+.subscribe .top p {
+  color: var(--secondTxt);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 0.6;
+}
+.subscribe input {
+  background: var(--bgoverlay);
+}
+.subscribe input:focus {
+  background: var(--bgoverlay);
+}
+.subscribe input::placeholder {
+  color: var(--headTxt);
 }

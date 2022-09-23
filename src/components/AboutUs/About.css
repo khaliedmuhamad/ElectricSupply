@@ -13,6 +13,9 @@
 
   position: relative;
 }
+.about img{
+  filter:opacity(var(--opacity));
+}
 .about-strength-head::after {
   content: " ";
   position: absolute;

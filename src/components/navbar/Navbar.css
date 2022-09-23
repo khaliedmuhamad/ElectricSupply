@@ -1,73 +1,80 @@
-.listLinks{    
-    background: #EEEEEE;
-    box-shadow: 7px 5px 15px rgba(13, 39, 80, 0.16), inset -20px -20px 32px rgba(255, 255, 255, 0.64);   
-    border-radius: 8px;
+.listLinks {
+  background: var(--whiteTxt);
+  box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
+  border-radius: 8px;
 }
-.nav-button{
-background: #4B4190;
-color: var(--lightTxt) !important;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -23px -23px 45px #FFFFFF;
+.nav-button {
+  background: var(--violet);
+  color: var(--FFF) !important;
 }
-.nav-btn-list{
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 6px;
-    padding: 5px 0;
+.navbar-brand span {
+  color: var(--headTxt);
 }
-nav .dropdown-menu{
-    position: absolute !important;
-    z-index: 999;
+.nav-btn-list {
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 5px 0;
 }
-.listLinks:hover{    
-    background: #EEEEEE;
-    transition: all 0.5s ease-in-out;
-    box-shadow: 13px 10px 30px rgba(13, 39, 80, 0.16), inset -31px -31px 43px rgba(255, 255, 255, 0.64);    border-radius: 8px;
+nav .dropdown-menu {
+  position: absolute !important;
+  z-index: 999;
 }
-.nav-button:hover{
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), -13px -13px 25px #FFFFFF;
-    transition: all 0.5s ease-in-out;
+.listLinks:hover {
+  color: var(--FFF) !important;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
 }
-.listLinks li{
-    text-transform: capitalize;
-
+.nav-button:hover {
+  transition: all 0.5s ease-in-out;
 }
-.listLinks li a{
-    color: #4c419093 !important;
+.listLinks li {
+  text-transform: capitalize;
 }
-.listLinks li:hover a{
-    text-transform: capitalize;
-    color: #4B4190 !important;
-    font-weight: 500;
-
+.listLinks li a {
+  color: var(--secondTxt) !important;
+  font-weight: 400;
 }
-.listLinks li a.active{    
-    color: #4B4190 !important;
-    font-weight: 500;
-
+.listLinks li:hover a {
+  text-transform: capitalize;
+  color: var(--violet) !important;
+  font-weight: 500;
+}
+.listLinks li a.active {
+  color: var(--textblue) !important;
+  font-weight: 500;
+}
+.listLinks li a:active {
+  color: var(--violet) !important;
+  font-weight: 500;
+  transform: scale(1.1);
 }
 /* Responsive navbar */
 /* X-Small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /*/ Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+}
 
 /*/ Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    nav div.container{
-        flex-direction: column;
-    }
- }
+  nav div.container {
+    flex-direction: column;
+  }
+}
 
 /*/ Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    nav div.container{
-        flex-direction: row;
-    }
- }
+@media (min-width: 992px) {
+  nav div.container {
+    flex-direction: row;
+  }
+}
 
 /*/ X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+}
 
 /*/ XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) {
+}

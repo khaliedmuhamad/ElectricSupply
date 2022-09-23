@@ -16,9 +16,14 @@ export const Sponsors = () => {
             ? ""
             : sponsorsData.map((el, n) => {
                 return (
-                  <div className="col">
-                    <div className="px-2" key={n}>
-                      <img className="sponsor-logo" src={el} width="80%" alt={el} />
+                  <div className="col" key={n}>
+                    <div className="px-2">
+                      <img
+                        className="sponsor-logo"
+                        src={el}
+                        width="80%"
+                        alt={el}
+                      />
                     </div>
                   </div>
                 );
