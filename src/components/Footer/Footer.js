@@ -12,9 +12,7 @@ export const Footer = (props) => {
 const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
   return (
     <footer className='footer ' id='contact'>
-        <div className='map'>
-        <Map />
-        </div>
+
         <div className='conatent py-5'>
             <div className='container py-5'>
             <div className='d-flex justify-content-start align-items-center flex-column flex-md-row  '>
@@ -66,7 +64,11 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
                     </div>
             </div>
             </div>
+            <div className='map'>
+        <Map />
         </div>
+        </div>
+
     </footer>
   )
 }
