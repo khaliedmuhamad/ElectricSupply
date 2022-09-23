@@ -7,7 +7,7 @@ export const Subscribe = (props) => {
   let subLang = multilang(Language).subscripe;
 
   return (
-    <section className="subscribe">
+    <section className="subscribe "  >
       <div className="container">
         <div className="d-flex align-items-end">
           <div className="right col-4 col-md-6">{subscripe}</div>

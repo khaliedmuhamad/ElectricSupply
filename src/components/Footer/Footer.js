@@ -4,14 +4,17 @@ import { multilang } from "../../components/functions/multilingual";
 import {ImFacebook2, ImLinkedin, ImPaypal, ImTwitter} from  "react-icons/im";
 import Anochor from '../functions/Anochor';
 import "./Footer.css"
+import { Map } from '../map/Map';
 export const Footer = (props) => {
     let Language = props.lang;
     let footerLang = multilang(Language).footer;
 
 const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
   return (
-    <footer className='footer '>
-
+    <footer className='footer ' id='contact'>
+        <div className='map'>
+        <Map />
+        </div>
         <div className='conatent py-5'>
             <div className='container py-5'>
             <div className='d-flex justify-content-start align-items-center flex-column flex-md-row  '>

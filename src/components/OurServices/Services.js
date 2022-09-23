@@ -42,28 +42,28 @@ export const Services = (props) => {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/650",
 
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/550",
 
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/1080",
 
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
-      imgSrc: "https://via.placeholder.com/150",
+      imgSrc: "https://via.placeholder.com/950",
 
     },
   ];
@@ -97,7 +97,7 @@ export const Services = (props) => {
   }, [bigEl.index,bigEl,servicesDataLength]);
 
   return (
-    <section className="services py-5">
+    <section className="services py-5" id="services">
       <div className="container">
         <h2 className="head-section text-center py-5">{servicesLang.header}</h2>
         <div className="d-flex  flex-md-row-reverse  flex-column ">

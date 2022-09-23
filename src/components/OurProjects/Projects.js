@@ -73,7 +73,7 @@ export const Projects = (props) => {
   ];
 
   return (
-    <section className="projects  py-5">
+    <section className="projects  py-5 " id="projects">
       <div className="">
         <h2 className="head-section  text-center py-3 mb-5">
           {projectsLang.header}

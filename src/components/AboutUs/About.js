@@ -17,7 +17,7 @@ export const About = (props) => {
   ];
 
   return (
-    <section className="about py-5 mt-3">
+    <section className="about py-5 mt-3" id="about">
       <div className="container">
         <div className="d-flex flex-column-reverse flex-md-row">
           <div className="about-left col-10 col-md-5 align-self-center mx-md-0 mx-auto align-self-lg-end ">

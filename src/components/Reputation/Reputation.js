@@ -24,7 +24,7 @@ const Reputation = (props) => {
     },
   ];
   return (
-    <section className="reputation py-5">
+    <section className="reputation py-5 " id="reputation" >
       <div className="container">
         <h2 className="head-section text-center">{ReputationLang.headfirst}</h2>
         <div className="d-flex mt-3 flex-md-row flex-column">

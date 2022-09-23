@@ -1,7 +1,14 @@
+.slick{
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+}
 .media-overlay {
   height: 40vh;
   overflow: hidden;
   width: 100%;
+  border-radius: 25px 25px 0 0;
 }
 .slick-arrow {
   height: 80%;
@@ -25,12 +32,15 @@
   line-height: 48px;
   letter-spacing: 0.03em;
 }
+.card-body{
+  border-radius:0 0 25px 25px;
+}
 .card-body p {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-
   opacity: 0.5;
+
 }
 .slick-slide .card-body {
   background: var(--bg);
@@ -50,11 +60,4 @@
   transform: scale(0.75);
   filter: grayscale(1);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-@media (max-width: 576px) {
-}
-
-/*/ Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 }
