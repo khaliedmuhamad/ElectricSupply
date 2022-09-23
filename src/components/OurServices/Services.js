@@ -86,8 +86,15 @@ export const Services = (props) => {
         <div className="d-flex  flex-md-row-reverse  flex-column ">
           <div className="big-rect  col-12   col-md-6 p-2">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
-              <div className="services-icon text-center">{bigEl.icon}</div>
-              <h3 className="services-head">{bigEl.head}</h3>
+              <div className="services-icon text-center">
+              <img
+                            src="https://via.placeholder.com/150"
+                            className="card-img-top mb-5 mt-5"
+                            alt="card"
+                            height={"90%"}
+                          />
+              </div>
+              <h3 className="services-head mt-5">{bigEl.head}</h3>
               <p className="services-paragraph">{bigEl.paragraph}</p>
             </div>
           </div>
