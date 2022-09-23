@@ -103,7 +103,7 @@ export const Services = (props) => {
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
               <div className="services-icon text-center">
               <img
-                            src={el.imgSrc}
+                            src={servicesLang.imgSrc}
                             className="card-img-top mb-5 mt-5"
                             alt="card"
                             height={"90%"}
