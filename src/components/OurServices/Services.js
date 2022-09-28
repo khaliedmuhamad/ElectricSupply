@@ -103,7 +103,7 @@ export const Services = (props) => {
         <div className="d-flex  flex-md-row-reverse  flex-column ">
           <div className="big-rect col-12 col-md-6 p-2">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
-              <div className="services-icon text-center w-50">
+              <div className="services-icon text-center w-100">
               <img
                             src={bigEl.imgSrc}
                             className="card-img-top mb-5 mt-5"
