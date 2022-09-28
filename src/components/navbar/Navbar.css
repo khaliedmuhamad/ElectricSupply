@@ -8,7 +8,7 @@
   color: var(--FFF) !important;
 }
 .navbar-brand span {
-  color: var(--headTxt);
+  color: var(--FFF);
 }
 .nav-btn-list {
   flex-direction: row;
