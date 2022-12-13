@@ -47,7 +47,7 @@ export const Deutsch = {
       head: [
         "Elektrizität Dienstverbindung",
         "Solar-Pv",
-        "Schulung und Ausbildung",
+        "Schulung und Ausimageung",
         "Kundendienst",
       ],
       paragraph: [
@@ -60,7 +60,7 @@ export const Deutsch = {
         "Deutsches Ipsum Dolor deserunt Glühwein has Zeitgeist Tollit Herr Doktor ius Welt Saepe Schadenfreude elaboraret Autobahn ne",
         "Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport",
         "Deutsches Ipsum Dolor deserunt Glühwein has Zeitgeist Tollit Herr Doktor ius Welt Saepe Schadenfreude elaboraret Autobahn ne",
-        "Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. Id Freude schöner",
+        "Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. id Freude schöner",
       ],
     },
   },
@@ -83,7 +83,7 @@ export const Deutsch = {
         "Deutsches Ipsum Dolor deserunt Erbsenzähler has Schmetterling Tollit Goethe ius schnell Saepe Wiener Würstchen elaboraret",
         "Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport",
         "Deutsches Ipsum Dolor deserunt Glühwein has Zeitgeist Tollit Herr Doktor ius Welt Saepe Schadenfreude elaboraret Autobahn ne",
-        "Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. Id Freude schöner",
+        "Deutsches Ipsum Dolor quo lucilius Fernweh at, adhuc laboramus Handtasche per at, in Die Ärzte ullum gloriatur. id Freude schöner",
         "Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen adhuc Ampelmännchen sadipscing schnell at, Ritter Sport",
       ],
     },
@@ -94,6 +94,7 @@ export const Deutsch = {
       "Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen",
     placeholder:
       "Geben Sie hier Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste",
+      sub:"submit "
   },
   footer: {
     top: {
@@ -105,4 +106,32 @@ export const Deutsch = {
     placeholder:
       "Geben Sie hier Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste",
   },
+  ourteam:{
+    people :[
+      {
+      name: "Haryy Stamper",
+      title: "Geschäftsführer",
+      quote:"Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt. "
+      },
+      {
+        name: "James-Gun",
+        title: "Projektleiter",
+        quote:
+          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt. ",
+      },
+      {
+        name: "Michael Mosely",
+        title: "Produktmanager",
+        quote:
+          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt."
+      },
+      {
+        name: "James van",
+        title: "Vizepräsident",
+        quote:
+          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt."
+      },
+    ],
+    
+  }
 };

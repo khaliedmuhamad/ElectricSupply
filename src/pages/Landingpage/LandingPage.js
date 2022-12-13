@@ -6,6 +6,7 @@ import { Join } from "../../components/join/Join";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Projects } from "../../components/OurProjects/Projects";
 import { Services } from "../../components/OurServices/Services";
+import OurTeam from "../../components/OurTeam/OurTeam";
 import Reputation from "../../components/Reputation/Reputation";
 import { Sponsors } from "../../components/sponsors/Sponsors";
 import { Subscribe } from "../../components/Subscribe/Subscribe";
@@ -70,11 +71,13 @@ export const LandingPage = () => {
       <Reputation lang={Lang} />
       <About lang={Lang} />
       <Sponsors lang={Lang} />
-
+      <OurTeam lang={Lang} />
       <Services lang={Lang} />
       <Join lang={Lang} />
       <Projects lang={Lang} />
       <Subscribe lang={Lang} />
+
+
       <Footer lang={Lang} />
     </div>
   );

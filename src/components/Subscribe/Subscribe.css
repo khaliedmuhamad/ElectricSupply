@@ -22,3 +22,15 @@
 .subscribe input::placeholder {
   color: var(--headTxt);
 }
+.alert-success {
+  position: absolute !important;
+  top: 0% !important;
+  left: 0;
+  z-index: 333;
+  width: 102%;
+  opacity: 1 !important;
+    --bs-alert-color: #0f5132;
+    --bs-alert-bg: #95eec6;
+    --bs-alert-border-color: #badbcc;
+
+}
