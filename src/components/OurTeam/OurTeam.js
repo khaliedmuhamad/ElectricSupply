@@ -5,6 +5,7 @@ import p1 from "../../assets/images/people/Person1.jpeg"
 import p2 from "../../assets/images/people/Person2.png"
 import p3 from "../../assets/images/people/Person3.jpg"
 import p4 from "../../assets/images/people/Person4.jpg"
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 
 const OurTeam = (props) => {
@@ -95,10 +96,10 @@ const   people = [
           );
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>
-          <i className="fas fa-arrow-left" />
+        <AiOutlineArrowLeft  />
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
-          <i className="fas fa-arrow-right" />
+        <AiOutlineArrowRight />
         </button>
       </div>
     </section>

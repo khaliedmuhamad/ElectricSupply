@@ -59,7 +59,7 @@ const handelSubmit = (e) =>{
                <form autoComplete="off" onSubmit={handelSubmit}  >
                 <div className="input-group flex-nowrap">
    
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
 
   <input            type="email"
                     className="form-control"
@@ -70,7 +70,7 @@ const handelSubmit = (e) =>{
                     onChange={(e)=>setEmail(e.target.value)}
                     value={email}
                     />
-  <button class="btn btn-outline-success" type="submit" id="button-addon2">{subLang.sub} 🚀</button>
+  <button className="btn btn-outline-success" type="submit" id="button-addon2">{subLang.sub} 🚀</button>
   <div id="successMassage"></div>
 </div>
 

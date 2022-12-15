@@ -10,7 +10,7 @@
   width: 100%;
   border-radius: 25px 25px 0 0;
 }
-.slick-arrow {
+.projects .slick-arrow {
   height: 80%;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.01));
   width: 9rem;

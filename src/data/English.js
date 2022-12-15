@@ -129,5 +129,10 @@ export const English = {
       },
     ],
     
+  },
+  say:{
+    head:"What Our Clients Says ?",
+    parag:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia facilis dolorum soluta recusandae tempora consequatur corrupti quod quas repellat a'
+    
   }
 };

@@ -4,6 +4,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { Home } from "../../components/Home/Home";
 import { Join } from "../../components/join/Join";
 import { Navbar } from "../../components/navbar/Navbar";
+import Opinions from "../../components/Opinions/Opinions";
 import { Projects } from "../../components/OurProjects/Projects";
 import { Services } from "../../components/OurServices/Services";
 import OurTeam from "../../components/OurTeam/OurTeam";
@@ -73,11 +74,11 @@ export const LandingPage = () => {
       <Sponsors lang={Lang} />
       <OurTeam lang={Lang} />
       <Services lang={Lang} />
-      <Join lang={Lang} />
+      
       <Projects lang={Lang} />
       <Subscribe lang={Lang} />
-
-
+<Join lang={Lang} />
+      <Opinions lang={Lang} />
       <Footer lang={Lang} />
     </div>
   );

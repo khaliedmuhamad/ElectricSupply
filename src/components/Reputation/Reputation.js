@@ -5,7 +5,7 @@ import { reputationsvg } from "../../assets/images/svgGraphics";
 
 const Reputation = (props) => {
   let Language = props.lang;
-  const ReputationLang = multilang(Language).reputation;
+  const ReputationLang =  multilang(Language).reputation;
   const reputationData = [
     {
       icon: reputationsvg.eng,

@@ -133,5 +133,10 @@ export const Deutsch = {
       },
     ],
     
+  },
+  say:{
+    head:"Was unsere Kunden sagt ?",
+    parag:"Lorem ipsum dolor, sit amet consectetur adipisicingelit. Quia facilis dolorum soluta recusandae tempora consequatur Corrupti quod quas repellat a",
+    
   }
 };

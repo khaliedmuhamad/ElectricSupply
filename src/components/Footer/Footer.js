@@ -5,6 +5,7 @@ import {ImFacebook2, ImLinkedin, ImPaypal, ImTwitter} from  "react-icons/im";
 import Anochor from '../functions/Anochor';
 import "./Footer.css"
 import { Map } from '../map/Map';
+import SendMail from '../functions/SendMail';
 export const Footer = (props) => {
     let Language = props.lang;
     let footerLang = multilang(Language).footer;
@@ -54,12 +55,9 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
                         </div>
                     </div>
                     <div className='bottom'>
-                    <div className="mb-3">
-  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder={footerLang.placeholder} />
+<SendMail lang={Language} />
 </div>
-<div className="mb-3">
-  <textarea className="form-control" id="exampleFormControlTextarea1" placeholder={footerLang.placeholder} rows="3"></textarea>
-</div></div>
+
 </div>
                     </div>
             </div>
