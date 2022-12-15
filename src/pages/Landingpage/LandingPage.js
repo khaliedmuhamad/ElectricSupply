@@ -72,13 +72,15 @@ export const LandingPage = () => {
       <Reputation lang={Lang} />
       <About lang={Lang} />
       <Sponsors lang={Lang} />
-      <OurTeam lang={Lang} />
+    
       <Services lang={Lang} />
       
       <Projects lang={Lang} />
       <Subscribe lang={Lang} />
-<Join lang={Lang} />
+      <Join lang={Lang} />
       <Opinions lang={Lang} />
+      
+      <OurTeam lang={Lang} />
       <Footer lang={Lang} />
     </div>
   );
