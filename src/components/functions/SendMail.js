@@ -3,11 +3,26 @@ import emailjs from "@emailjs/browser";
 import { multilang } from "./multilingual";
 
 function SendMail(props) {
+
   let Language = props.lang;
   let footerLang = multilang(Language).footer;
   const [email,setEmail] = useState('')
   const [massage,setMassage] = useState('')
   const form = useRef();
+
+  const alertPlaceholder = document.getElementById('successMassageForm')
+  const alert = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+      `<div class=" top-0 alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '</div>'
+    ].join('')
+  
+    alertPlaceholder.append(wrapper)
+  }
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,6 +44,7 @@ function SendMail(props) {
       );
       setEmail('');
       setMassage('');
+      alert('your Email send successfuly 🐱‍🏍', 'success')
   };
 
   return (
@@ -63,9 +79,11 @@ function SendMail(props) {
           type="submit"
           value="Send"
           rows="3"
+
         >
           submit
         </button>
+        <div id="successMassageForm"></div>
       </div>
     </form>
   );
