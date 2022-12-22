@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef , useState} from "react";
 import emailjs from "@emailjs/browser";
 import { multilang } from "./multilingual";
 
 function SendMail(props) {
   let Language = props.lang;
   let footerLang = multilang(Language).footer;
-
+  const [email,setEmail] = useState('')
+  const [massage,setMassage] = useState('')
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,6 +27,8 @@ function SendMail(props) {
           console.log(error.text);
         }
       );
+      setEmail('');
+      setMassage('');
   };
 
   return (
@@ -38,6 +41,8 @@ function SendMail(props) {
           id="exampleFormControlInput1"
           name="user_email"
           placeholder={footerLang.placeholder}
+          onChange={(e)=>setEmail(e.target.value)}
+          value={email}
         />
       </div>
       <div className="mb-3">
@@ -48,7 +53,9 @@ function SendMail(props) {
           id="exampleFormControlTextarea1"
           placeholder={footerLang.placeholder}
           rows="3"
-        ></textarea>
+          onChange={(e)=>setMassage(e.target.value)}
+          value={massage}
+        />
       </div>
       <div className="mb-3">
         <button
