@@ -1,15 +1,18 @@
 import axios from "axios";
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import { subscripe } from "../../assets/images/svgGraphics";
 import { multilang } from "../functions/multilingual";
 import "./Subscribe.css";
+import emailjs from "@emailjs/browser";
+
 export const Subscribe = (props) => {
   let Language = props.lang;
   let subLang = multilang(Language).subscripe;
 
 // form states
 const [email,setEmail] = useState("");
+const form = useRef();
 
 const alertPlaceholder = document.getElementById('successMassage')
 const alert = (message, type) => {
@@ -30,6 +33,7 @@ const alert = (message, type) => {
 //HANDEL SUBMIT
 const handelSubmit = (e) =>{
   e.preventDefault();
+  /*
   const data ={
     email:email
   }
@@ -40,6 +44,22 @@ const handelSubmit = (e) =>{
 
 }
   )
+*/
+emailjs
+.sendForm(
+  "service_pvbczu7",
+  "template_4z9j2dc",
+  form.current,
+  "jD4T69wgtU2BsOcFu"
+)
+.then(
+  (result) => {
+    console.log(result.text);
+  },
+  (error) => {
+    console.log(error.text);
+  }
+)
 
 }
 
@@ -67,6 +87,7 @@ const handelSubmit = (e) =>{
                     aria-label={subLang.head}
                     aria-describedby="addon-wrapping" 
                     required 
+                    name="user_email"
                     onChange={(e)=>setEmail(e.target.value)}
                     value={email}
                     />
