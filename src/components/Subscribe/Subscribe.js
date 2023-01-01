@@ -61,6 +61,7 @@ emailjs
   }
 )
 
+
 }
 
 
@@ -76,7 +77,7 @@ emailjs
                 <p>{subLang.paragraph}</p>
               </div>
               <div className="bottom py-5">               
-               <form autoComplete="off" onSubmit={handelSubmit}  >
+               <form autoComplete="off" ref={form} onSubmit={handelSubmit}  >
                 <div className="input-group flex-nowrap">
    
                 <div className="input-group mb-3">
