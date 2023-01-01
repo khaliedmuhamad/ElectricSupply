@@ -28,7 +28,6 @@ function SendMail(props) {
     e.preventDefault();
 
     emailjs
-        emailjs
       .sendForm(
         "service_08s6d2s",
         "template_4z9j2dc",
@@ -43,6 +42,7 @@ function SendMail(props) {
           console.log(error.text);
         }
       );
+      
       setEmail('');
       setMassage('');
       alert('your Email send successfuly 🐱‍🏍', 'success')
