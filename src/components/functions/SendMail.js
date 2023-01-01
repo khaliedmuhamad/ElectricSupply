@@ -28,11 +28,12 @@ function SendMail(props) {
     e.preventDefault();
 
     emailjs
+        emailjs
       .sendForm(
-        "service_0mkpq0b",
-        "template_hjz9zo8",
+        "service_08s6d2s",
+        "template_4z9j2dc",
         form.current,
-        "HhXMMF56ISbA_xig8"
+        "jD4T69wgtU2BsOcFu"
       )
       .then(
         (result) => {
