@@ -9,6 +9,7 @@ export const English = {
       { name: "English", app: "EN" },
       { name: "Deutsch", app: "DE" },
     ],
+    sign:"sign in"
   },
   home: {
     headfirst: "100 % Lorem ",

@@ -3,6 +3,15 @@ import { multilang } from "../functions/multilingual";
 import { FaSolarPanel } from "react-icons/fa";
 import { BsLifePreserver } from "react-icons/bs";
 import { VscBook } from "react-icons/vsc";
+import trainning from "../../assets/images/services/train.jpg";
+import aftersales from "../../assets/images/services/aftersales.jpg";
+import connect from "../../assets/images/services/connections.jpg";
+import solar from "../../assets/images/services/solar.jpg";
+import trainning2 from "../../assets/images/services/train2.jpg";
+import aftersales2 from "../../assets/images/services/aftersales2.jpg";
+import connect2 from "../../assets/images/services/connections2.jpg";
+import solar2 from "../../assets/images/services/solar2.jpg";
+
 import { TbPlugConnected } from "react-icons/tb";
 import "./Services.css";
 export const Services = (props) => {
@@ -15,55 +24,55 @@ export const Services = (props) => {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
-      imgSrc: "https://via.placeholder.com/750",
+      imgSrc: connect,
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
-      imgSrc: "https://via.placeholder.com/750",
+      imgSrc: solar,
 
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
-      imgSrc: "https://via.placeholder.com/750",
+      imgSrc: trainning,
 
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
-      imgSrc: "https://via.placeholder.com/750",
+      imgSrc: aftersales,
 
     },
     {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
-      imgSrc: "https://via.placeholder.com/650",
+      imgSrc: connect2,
 
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
-      imgSrc: "https://via.placeholder.com/550",
+      imgSrc: solar2,
 
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
-      imgSrc: "https://via.placeholder.com/1080",
+      imgSrc: trainning2,
 
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
-      imgSrc: "https://via.placeholder.com/950",
+      imgSrc: aftersales2,
 
     },
   ];
@@ -97,23 +106,26 @@ export const Services = (props) => {
   }, [bigEl.index,bigEl,servicesDataLength]);
 
   return (
-    <section className="services py-5" id="services">
+    <section className="services py-2" id="services">
       <div className="container">
         <h2 className="head-section text-center py-5">{servicesLang.header}</h2>
         <div className="d-flex  flex-md-row-reverse  flex-column ">
-          <div className="big-rect col-12 col-md-6 p-2">
+          <div className="big-rect col-12 col-md-6 p-2 pb-0">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
-              <div className="services-icon text-center w-100">
+              <div className="services-icon text-center">
               <img
                             src={bigEl.imgSrc}
-                            className="card-img-top mb-5 mt-5"
+                            className="card-img-top mb-1 mt-1"
                             alt="card"
-                            width={"100%"}
+                            width="100%"
+                         
 
                           />
               </div>
-              <h3 className="services-head mt-5">{bigEl.head}</h3>
+              <div className="big-info" >
+              <h3 className="services-head mt-2">{bigEl.head}</h3>
               <p className="services-paragraph">{bigEl.paragraph}</p>
+              </div>
             </div>
           </div>
           <div className="small-rects col-md-6 col-12">
