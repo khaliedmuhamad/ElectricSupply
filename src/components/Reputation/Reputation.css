@@ -6,8 +6,11 @@
   position: absolute;
   inset: 0 0 0 -150px;
   z-index: 1;
-  transform: scale(.8) translate(-20px,10px) rotate(0deg);
-  filter: blur(5px);
+  -webkit-transform: scale(.8) translate(-20px,10px) rotate(0deg);
+      -ms-transform: scale(.8) translate(-20px,10px) rotate(0deg);
+          transform: scale(.8) translate(-20px,10px) rotate(0deg);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   opacity: 0.5;
 
 }
@@ -19,7 +22,10 @@
   padding: 10px 9px;
   height: 200px;
   background: var(--cardsBg);
-  box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01),
+  -webkit-box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01),
+    27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09),
+    3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 48px 38px 24px rgba(0, 0, 0, 0.01),
     27px 21px 21px rgba(0, 0, 0, 0.05), 12px 10px 15px rgba(0, 0, 0, 0.09),
     3px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
   border-radius: 32px;
@@ -46,9 +52,7 @@
   line-height: 18px;
   color: var(--secondTxt);
 }
-.right-info h2{
 
-}
 .right-info p{
   font-size: 1.2rem;
   font-weight: 500;

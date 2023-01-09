@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { multilang } from "../functions/multilingual";
 import { brandLogo, homesvgs } from "../../assets/images/svgGraphics";
-import  electricMan  from "../../assets/images/electricMan.png";
+import electricMan from "../../assets/images/electricMan.png";
 import ReactTypingEffect from "react-typing-effect";
 
 export const Home = (props) => {
@@ -27,17 +27,17 @@ export const Home = (props) => {
           <div className="offset-1 col-7 col-md-5 offset-md-2 home-right">
             <div className="w-md-50 ms-auto position-relative">
               <div className="home-card d-flex flex-column">
-                <button className="btn btn-transparent text-primary  btn-md home-card-button">          
-          {brandLogo} <span className="text-primary">{multilang(Language).navbar.brand}</span>
-
+                <button className="btn btn-transparent text-primary  btn-md home-card-button">
+                  {brandLogo}{" "}
+                  <span className="text-primary">
+                    {multilang(Language).navbar.brand}
+                  </span>
                 </button>
 
                 <div className="home-card-paragraph">
-                <br />
-              <ReactTypingEffect
-        text={homeLang.card[0]} />
-          
-                  </div>
+                  <br />
+                  <ReactTypingEffect text={homeLang.card[0]} />
+                </div>
               </div>
               <div className="w-100 w-md-75 ">
                 <div className="home-img-overlay">
@@ -48,8 +48,6 @@ export const Home = (props) => {
           </div>
         </div>
       </div>
-    
-
     </section>
   );
 };

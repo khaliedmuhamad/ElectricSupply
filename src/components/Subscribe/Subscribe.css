@@ -19,6 +19,18 @@
 .subscribe input:focus {
   background: var(--bgoverlay);
 }
+.subscribe input::-webkit-input-placeholder {
+  color: var(--headTxt);
+}
+.subscribe input::-moz-placeholder {
+  color: var(--headTxt);
+}
+.subscribe input:-ms-input-placeholder {
+  color: var(--headTxt);
+}
+.subscribe input::-ms-input-placeholder {
+  color: var(--headTxt);
+}
 .subscribe input::placeholder {
   color: var(--headTxt);
 }

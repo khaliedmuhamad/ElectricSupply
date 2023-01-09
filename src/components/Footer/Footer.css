@@ -32,11 +32,17 @@
     cursor: pointer;
 }
 .social-footer-items:hover{
-    transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+        -ms-transform: scale(1.12);
+            transform: scale(1.12);
+    -webkit-transition: all 0.1s  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 0.1s  cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.1s  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .social-footer-items:active{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 .right-top-head{
 font-weight: 700;
@@ -60,6 +66,26 @@ color: rgba(255, 255, 255, 0.67);
         font-weight: 500;
         font-size: 12px;
         line-height: 21px;
+        }
+        .form-control::-webkit-input-placeholder{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
+        }
+        .form-control::-moz-placeholder{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
+        }
+        .form-control:-ms-input-placeholder{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
+        }
+        .form-control::-ms-input-placeholder{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
         }
         .form-control::placeholder{
             font-weight: 500;

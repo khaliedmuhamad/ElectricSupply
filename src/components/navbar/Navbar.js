@@ -33,7 +33,11 @@ export const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 rounded-md-pill ps-2 pe-2 listLinks">
             <li className="nav-item mx-1">
-              <Anochor className="nav-link active" aria-current="page" href="#home">
+              <Anochor
+                className="nav-link active"
+                aria-current="page"
+                href="#home"
+              >
                 {multilang(Lang).navbar.links[0]}
               </Anochor>
             </li>
@@ -65,8 +69,7 @@ export const Navbar = (props) => {
                 dark ? "dark" : "light"
               } `}
               onClick={() => {
-                return props.setDark((prev) => !prev)  , setDark((p) => !p);
-              }}
+                return props.setDark((prev) => !prev);              }}
               style={dark ? { background: "#ff9900" } : { background: "" }}
             >
               <button className="btn btn-md text-light">
@@ -94,7 +97,7 @@ export const Navbar = (props) => {
                 <li>
                   <Anochor
                     className="dropdown-item"
-                    data-Language="EN"
+                    data-language="EN"
                     onClick={(e) => {
                       props.Setlanguage(e.target.dataset.language);
                     }}
@@ -105,7 +108,7 @@ export const Navbar = (props) => {
                 <li>
                   <Anochor
                     className="dropdown-item"
-                    data-Language="DE"
+                    data-language="DE"
                     onClick={(e) => {
                       props.Setlanguage(e.target.dataset.language);
                     }}
@@ -115,21 +118,16 @@ export const Navbar = (props) => {
                 </li>
               </ul>
             </li>
-            <button className="btn btn-md text-light">
-
-              </button>
-              <li
-              className={`nav-button rounded-pill  shadow text-light`}
-             
-            >
+            <button className="btn btn-md text-light"></button>
+            <li className={`nav-button rounded-pill  shadow text-light`}>
               <button className="btn btn-md text-light rounded-pill">
-              <Anochor
-              className="text-light"
-              href="https://webmail.strato.com/appsuite/ui"
-              target="__blank"
-                  >
-           {multilang(Lang).navbar.sign}
-                  </Anochor>
+                <Anochor
+                  className="text-light"
+                  href="https://webmail.strato.com/appsuite/ui"
+                  target="__blank"
+                >
+                  {multilang(Lang).navbar.sign}
+                </Anochor>
               </button>
             </li>
           </ul>

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useState } from "react";
 import { multilang } from "../functions/multilingual";
 import { FaSolarPanel } from "react-icons/fa";
@@ -19,6 +21,7 @@ export const Services = (props) => {
   const servicesLang = multilang(Language).services;
   const servicesLangHead = multilang(Language).services.info.head;
   const servicesLangPara = multilang(Language).services.info.paragraph;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const servicesData = [
     {
       head: servicesLangHead[0],
@@ -31,49 +34,42 @@ export const Services = (props) => {
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
       imgSrc: solar,
-
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
       imgSrc: trainning,
-
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
       imgSrc: aftersales,
-
     },
     {
       head: servicesLangHead[0],
       paragraph: servicesLangPara,
       icon: <TbPlugConnected />,
       imgSrc: connect2,
-
     },
     {
       head: servicesLangHead[1],
       paragraph: servicesLangPara,
       icon: <FaSolarPanel />,
       imgSrc: solar2,
-
     },
     {
       head: servicesLangHead[2],
       paragraph: servicesLangPara,
       icon: <VscBook />,
       imgSrc: trainning2,
-
     },
     {
       head: servicesLangHead[3],
       paragraph: servicesLangPara,
       icon: <BsLifePreserver />,
       imgSrc: aftersales2,
-
     },
   ];
   const [bigEl, SetBigEL] = useState({
@@ -81,29 +77,32 @@ export const Services = (props) => {
     paragraph: servicesData[0].paragraph[0],
     icon: servicesData[0].icon,
     index: 0,
-    imgSrc:servicesData[0].imgSrc
+    imgSrc: servicesData[0].imgSrc,
   });
-  const changeContentBigRect = (e) => {
-    SetBigEL({
-      head: servicesData[e].head,
-      paragraph: servicesData[e].paragraph[e],
-      icon: servicesData[e].icon,
-      index: e,
-      imgSrc:servicesData[e].imgSrc
-    });
-  };
+
   const servicesDataLength = servicesData.length - 1;
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const changeContentBigRect = (e) => {
+      SetBigEL({
+        head: servicesData[e].head,
+        paragraph: servicesData[e].paragraph[e],
+        icon: servicesData[e].icon,
+        index: e,
+        imgSrc: servicesData[e].imgSrc,
+      });
+    };
     const interval = setInterval(() => {
+      
       if (bigEl.index === servicesDataLength) {
         return changeContentBigRect(0);
       } else {
         return changeContentBigRect(bigEl.index + 1);
       }
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
-  }, [bigEl.index,bigEl,servicesDataLength]);
+  }, [bigEl.index, bigEl, servicesDataLength, servicesData]);
 
   return (
     <section className="services py-2" id="services">
@@ -113,18 +112,16 @@ export const Services = (props) => {
           <div className="big-rect col-12 col-md-6 p-2 pb-0">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
               <div className="services-icon text-center">
-              <img
-                            src={bigEl.imgSrc}
-                            className="card-img-top mb-1 mt-1"
-                            alt="card"
-                            width="100%"
-                         
-
-                          />
+                <img
+                  src={bigEl.imgSrc}
+                  className="card-img-top mb-1 mt-1"
+                  alt="card"
+                  width="100%"
+                />
               </div>
-              <div className="big-info" >
-              <h3 className="services-head mt-2">{bigEl.head}</h3>
-              <p className="services-paragraph">{bigEl.paragraph}</p>
+              <div className="big-info">
+                <h3 className="services-head mt-2">{bigEl.head}</h3>
+                <p className="services-paragraph">{bigEl.paragraph}</p>
               </div>
             </div>
           </div>

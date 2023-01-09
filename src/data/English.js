@@ -9,7 +9,7 @@ export const English = {
       { name: "English", app: "EN" },
       { name: "Deutsch", app: "DE" },
     ],
-    sign:"sign in"
+    sign: "sign in",
   },
   home: {
     headfirst: "100 % Lorem ",
@@ -91,7 +91,7 @@ export const English = {
     head: "Subscribe Newletter",
     paragraph: " 1500s, when an unknown printer took unknown printer ",
     placeholder: "Put your email here and Prss Enter",
-    sub:"submit"
+    sub: "submit",
   },
   footer: {
     top: {
@@ -102,8 +102,8 @@ export const English = {
     head2: "Leave a Message",
     placeholder: "Put your email here and Prss Enter",
   },
-  ourteam:{
-    people :[
+  ourteam: {
+    people: [
       {
         name: "Haryy Stamper",
         title: "manager",
@@ -129,11 +129,10 @@ export const English = {
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
     ],
-    
   },
-  say:{
-    head:"What Our Clients Says ?",
-    parag:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia facilis dolorum soluta recusandae tempora consequatur corrupti quod quas repellat a'
-    
-  }
+  say: {
+    head: "What Our Clients Says ?",
+    parag:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia facilis dolorum soluta recusandae tempora consequatur corrupti quod quas repellat a",
+  },
 };

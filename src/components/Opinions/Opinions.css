@@ -1,3 +1,5 @@
+
+
 .opinios{
     background: var(--cardsBg);
     padding:7rem 0 !important ;
@@ -10,6 +12,10 @@
     position: absolute;
     inset: 0 0;
     content: " ";
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.301)), to(rgba(0, 42, 255, 0.253))),
+                  url(/public/images/bg-pattern.png);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.301), rgba(0, 42, 255, 0.253)),
+                  url(/public/images/bg-pattern.png);
     background-image: linear-gradient(rgba(255, 255, 255, 0.301), rgba(0, 42, 255, 0.253)),
                   url(/public/images/bg-pattern.png);
     z-index: -2;
@@ -23,13 +29,17 @@
     height: 120px;
     border-radius:50% ;
     overflow: hidden;
-    box-shadow: 0 2px 3px rgba(201, 201, 201, 0.1), 
+    -webkit-box-shadow: 0 2px 3px rgba(201, 201, 201, 0.1), 
+    0 4px 6px rgba(151, 151, 151, 0.2),
+    0 6px 9px rgba(128, 128, 128, 0.5);
+            box-shadow: 0 2px 3px rgba(201, 201, 201, 0.1), 
     0 4px 6px rgba(151, 151, 151, 0.2),
     0 6px 9px rgba(128, 128, 128, 0.5);
     border-top: 2px solid rgba(0, 0, 0, 0.041);
 }
 .image-overlay img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .feedback{
     position: relative;
@@ -54,6 +64,8 @@
 }
 .slick-arrow {
     height: 3rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(63, 46, 219, 0.1)), to(rgba(24, 161, 224, 0.575)));
+    background: -o-linear-gradient(rgba(63, 46, 219, 0.1), rgba(24, 161, 224, 0.575));
     background: linear-gradient(rgba(63, 46, 219, 0.1), rgba(24, 161, 224, 0.575));
     width: 3rem;
     border-radius: 20px;
@@ -63,44 +75,59 @@
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+            transform: scale(0.1);
 }
 .slick-dots li:nth-of-type(1){
     position: absolute;
     top: 10%;
     left: 5%;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
 
 }
 .slick-dots li:nth-of-type(2){
     position: absolute;
     top: 50%;
     left: 0%;
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
 
 }
 .slick-dots li:nth-of-type(3){
     position: absolute;
     top: 10%;
     right: 12%;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 
 }
 .slick-dots li:nth-of-type(4){
     position: absolute;
     top: 60%;
     right: 10%;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 
 }
 
 .dotsItem img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .slick-dots li.slick-active{
     opacity:0.1;
+    -webkit-transition: all linear 1s;
+    -o-transition: all linear 1s;
     transition: all linear 1s;
-    transform: scale(1.5) ;
+    -webkit-transform: scale(1.5) ;
+        -ms-transform: scale(1.5) ;
+            transform: scale(1.5) ;
 
 }
 .opinios .head{

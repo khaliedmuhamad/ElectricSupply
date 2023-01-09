@@ -6,7 +6,8 @@
   background-size: cover;
   background-position: bottom;
   position: relative;
-  box-shadow: -10px -10px 20px var(--shadow1), 10px 10px 30px var(--shadow2);
+  -webkit-box-shadow: -10px -10px 20px var(--shadow1), 10px 10px 30px var(--shadow2);
+          box-shadow: -10px -10px 20px var(--shadow1), 10px 10px 30px var(--shadow2);
 }
 .join .bg-overlay {
   background-color: rgba(0, 0, 0, 0.8);

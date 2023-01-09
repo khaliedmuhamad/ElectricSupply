@@ -1,6 +1,7 @@
 .listLinks {
   background: var(--whiteTxt);
-  box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
+  -webkit-box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
+          box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
   border-radius: 8px;
 }
 .nav-button {
@@ -15,8 +16,13 @@
   color: var(--FFF);
 }
 .nav-btn-list {
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 6px;
   padding: 5px 0;
 }
@@ -26,10 +32,15 @@ nav .dropdown-menu {
 }
 .listLinks:hover {
   color: var(--FFF) !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
+  -webkit-box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
+          box-shadow: 7px 5px 15px var(--shadow1), inset -20px -20px 32px var(--shadow2);
 }
 .nav-button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .listLinks li {
@@ -51,35 +62,33 @@ nav .dropdown-menu {
 .listLinks li a:active {
   color: var(--violet) !important;
   font-weight: 500;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /* Responsive navbar */
 /* X-Small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap */
 
-/*/ Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
 
 /*/ Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   nav div.container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-/*/ Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
 
-}
 
 /*/ X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   nav div.container {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-}
-
-/*/ XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
 }

@@ -14,7 +14,8 @@
   position: relative;
 }
 .about img{
-  filter:opacity(var(--opacity));
+  -webkit-filter:opacity(var(--opacity));
+          filter:opacity(var(--opacity));
 }
 .about-strength-head::after {
   content: " ";
@@ -24,7 +25,25 @@
   width: 20%;
   height: 5px;
   background: #e9a296;
-  animation: lining 2s linear infinite;
+  -webkit-animation: lining 2s linear infinite;
+          animation: lining 2s linear infinite;
+}
+@-webkit-keyframes lining {
+  0% {
+    width: 20%;
+    opacity: 1;
+    height: 5px;
+  }
+  50% {
+    width: 25%;
+    opacity: 0.7;
+    height: 4.5px;
+  }
+  100% {
+    width: 20%;
+    opacity: 1;
+    height: 5px;
+  }
 }
 @keyframes lining {
   0% {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import city from "../../assets/images/projects/city.jpg";
 import factory from "../../assets/images/projects/factory.jpg";
@@ -6,14 +6,13 @@ import hospital from "../../assets/images/projects/hopital.jpg";
 import university from "../../assets/images/projects/university.jpg";
 import lines from "../../assets/images/projects/lines.webp";
 import { multilang } from "../../components/functions/multilingual";
-import { AiFillPlaySquare } from "react-icons/ai";
 import "./Projects.css";
 export const Projects = (props) => {
   let Language = props.lang;
   const projectsLang = multilang(Language).projects;
   const projectsLangHead = multilang(Language).projects.info.head;
   const projectsLangPara = multilang(Language).projects.info.paragraph;
-  const [index, setIndex] = useState(0);
+  const [, setIndex] = useState(0);
   const settings = {
     className: "center",
     centerMode: true,
@@ -51,7 +50,7 @@ export const Projects = (props) => {
     ],
   };
 
-/**
+  /**
  *   1   "High and long lines",
      2   "hospitals",
      3   "city connections",
@@ -59,11 +58,19 @@ export const Projects = (props) => {
      5   "factory supply",
  */
   const dataProjects = [
-    { head: projectsLangHead[0], paragraph: projectsLangPara[0],img:lines },
-    { head: projectsLangHead[1], paragraph: projectsLangPara[2],img:hospital },
-    { head: projectsLangHead[2], paragraph: projectsLangPara[2],img:city },
-    { head: projectsLangHead[3], paragraph: projectsLangPara[0],img:university },
-    { head: projectsLangHead[4], paragraph: projectsLangPara[0],img:factory},
+    { head: projectsLangHead[0], paragraph: projectsLangPara[0], img: lines },
+    {
+      head: projectsLangHead[1],
+      paragraph: projectsLangPara[2],
+      img: hospital,
+    },
+    { head: projectsLangHead[2], paragraph: projectsLangPara[2], img: city },
+    {
+      head: projectsLangHead[3],
+      paragraph: projectsLangPara[0],
+      img: university,
+    },
+    { head: projectsLangHead[4], paragraph: projectsLangPara[0], img: factory },
   ];
 
   return (
@@ -80,9 +87,13 @@ export const Projects = (props) => {
                   <div className="p-2" key={n}>
                     <div className="card project-card">
                       <div className="media-overlay">
-                        
-                          <img src={el.img} alt={el.head} height="100%" width="100%"/>
-                        {console.log(el)}
+                        <img
+                          src={el.img}
+                          alt={el.head}
+                          height="100%"
+                          width="100%"
+                        />
+                       
                       </div>
 
                       <div className="card-body">

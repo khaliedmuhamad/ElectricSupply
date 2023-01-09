@@ -31,10 +31,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--secondTxt);
-  filter: opacity(0.4);
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
   color: white;
 }
 
@@ -49,20 +54,41 @@
   width: 100%;
   height: 70vh;
   opacity: 0.5;
-  animation: fade 5s infinite ease-in-out;
+  -webkit-animation: fade 5s infinite ease-in-out;
+          animation: fade 5s infinite ease-in-out;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 @keyframes fade {
   0% {
     opacity: 0.5;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     opacity: 0.8;
-    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
   100% {
     opacity: 0.5;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 .home-card {
@@ -73,16 +99,22 @@
   width: 250px;
   padding: 20px 12px;
   background: var(--cardsBg);
-  box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.12);
-  backdrop-filter: blur(90px);
+  -webkit-box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.12);
+          box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.12);
+  -webkit-backdrop-filter: blur(90px);
+          backdrop-filter: blur(90px);
   border-radius: 24px;
   z-index: 2;
   opacity: 0.7;
 }
 .home-card:hover {
   background: var(--cardsBg);
-  box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.3);
-  backdrop-filter: blur(90px);
+  -webkit-box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.3);
+          box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.3);
+  -webkit-backdrop-filter: blur(90px);
+          backdrop-filter: blur(90px);
+  -webkit-transition: all 0.54s linear;
+  -o-transition: all 0.54s linear;
   transition: all 0.54s linear;
   opacity: 1;
 
@@ -162,7 +194,9 @@
     left: -40%;
     width: 200px;
     border-radius: 18px;
-    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+            transform: scale(0.75);
 
   }
 }

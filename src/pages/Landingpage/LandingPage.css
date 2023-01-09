@@ -21,8 +21,10 @@ overflow: hidden;
 
 
 ::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0368a), color-stop(99%, #708ad4));
   background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
-  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+          box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 100px;
 }
 .page{
@@ -36,7 +38,9 @@ overflow: hidden;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .custom-shape-divider-top-1664327992 svg {
   position: relative;
@@ -53,8 +57,6 @@ overflow: hidden;
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /*/ Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
 
 /*/ Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -76,8 +78,4 @@ overflow: hidden;
   .wave-top{
     inset: -100px 0px 0px -250px;
   }
-}
-
-/*/ XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
 }

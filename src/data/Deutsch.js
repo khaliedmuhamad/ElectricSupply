@@ -9,7 +9,7 @@ export const Deutsch = {
       { name: "English", app: "En" },
       { name: "Deutsch", app: "DE" },
     ],
-    sign:"Einloggen"
+    sign: "Einloggen",
   },
   home: {
     headfirst: "100 % Lorem ",
@@ -78,7 +78,7 @@ export const Deutsch = {
         "hospitals",
         "Stadtverbindungen",
         "Universität",
-        "Werksversorgung"
+        "Werksversorgung",
       ],
       paragraph: [
         "Deutsches Ipsum Dolor deserunt Erbsenzähler has Schmetterling Tollit Goethe ius schnell Saepe Wiener Würstchen elaboraret",
@@ -95,7 +95,7 @@ export const Deutsch = {
       "Deutsches Ipsum Dolor quo Weltschmerz posidonium Die Toten Hosen",
     placeholder:
       "Geben Sie hier Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste",
-      sub:"submit "
+    sub: "submit ",
   },
   footer: {
     top: {
@@ -107,12 +107,13 @@ export const Deutsch = {
     placeholder:
       "Geben Sie hier Ihre E-Mail-Adresse ein und drücken Sie die Eingabetaste",
   },
-  ourteam:{
-    people :[
+  ourteam: {
+    people: [
       {
-      name: "Haryy Stamper",
-      title: "Geschäftsführer",
-      quote:"Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt. "
+        name: "Haryy Stamper",
+        title: "Geschäftsführer",
+        quote:
+          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt. ",
       },
       {
         name: "James-Gun",
@@ -124,20 +125,19 @@ export const Deutsch = {
         name: "Michael Mosely",
         title: "Produktmanager",
         quote:
-          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt."
+          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt.",
       },
       {
         name: "James van",
         title: "Vizepräsident",
         quote:
-          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt."
+          "Lorem Ipsum ist einfach ein Blindtext der Druck- und Setzindustrie. Lorem Ipsum ist seit dem 15. Jahrhundert der Standard-Blindtext der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und sie durcheinanderbrachte, um ein Musterbuch für Typen herzustellen. Er hat überlebt nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz, der im Wesentlichen unverändert bleibt.",
       },
     ],
-    
   },
-  say:{
-    head:"Was unsere Kunden sagt ?",
-    parag:"Lorem ipsum dolor, sit amet consectetur adipisicingelit. Quia facilis dolorum soluta recusandae tempora consequatur Corrupti quod quas repellat a",
-    
-  }
+  say: {
+    head: "Was unsere Kunden sagt ?",
+    parag:
+      "Lorem ipsum dolor, sit amet consectetur adipisicingelit. Quia facilis dolorum soluta recusandae tempora consequatur Corrupti quod quas repellat a",
+  },
 };

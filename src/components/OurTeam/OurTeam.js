@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./OurTeam.css";
 import { multilang } from "../functions/multilingual";
-import p1 from "../../assets/images/people/Person1.jpeg"
-import p2 from "../../assets/images/people/Person2.png"
-import p3 from "../../assets/images/people/Person3.jpg"
-import p4 from "../../assets/images/people/Person4.jpg"
+import p1 from "../../assets/images/people/Person1.jpeg";
+import p2 from "../../assets/images/people/Person2.png";
+import p3 from "../../assets/images/people/Person3.jpg";
+import p4 from "../../assets/images/people/Person4.jpg";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
-
 const OurTeam = (props) => {
-
   const [index, setIndex] = useState(0);
   let Language = props.lang;
   let peopleLang1 = multilang(Language).ourteam.people[0];
@@ -17,37 +15,36 @@ const OurTeam = (props) => {
   let peopleLang3 = multilang(Language).ourteam.people[2];
   let peopleLang4 = multilang(Language).ourteam.people[3];
 
-const   people = [
+  const people = [
     {
-    id: 1,
-    image: p1,
-    name: peopleLang1.name,
-    title: peopleLang1.title,
-    quote:peopleLang1.quote
+      id: 1,
+      image: p1,
+      name: peopleLang1.name,
+      title: peopleLang1.title,
+      quote: peopleLang1.quote,
     },
     {
       id: 2,
       image: p2,
       name: peopleLang2.name,
       title: peopleLang2.title,
-      quote:peopleLang2.quote
+      quote: peopleLang2.quote,
     },
     {
       id: 3,
       image: p3,
       name: peopleLang3.name,
       title: peopleLang3.title,
-      quote:peopleLang3.quote
-        },
+      quote: peopleLang3.quote,
+    },
     {
       id: 4,
       image: p4,
       name: peopleLang4.name,
       title: peopleLang4.title,
-      quote:peopleLang4.quote    },
+      quote: peopleLang4.quote,
+    },
   ];
-
-
 
   useEffect(() => {
     const lastIndex = people.length - 1;
@@ -57,7 +54,7 @@ const   people = [
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index, people]);
+  }, [index, people.length]);
 
   useEffect(() => {
     let slider = setInterval(() => {
@@ -71,7 +68,7 @@ const   people = [
   return (
     <section className="section my-5">
       <div className="title">
-        <h2>our Teams  </h2>
+        <h2>our Teams </h2>
       </div>
       <div className="section-center">
         {people.map((item, indexPeople) => {
@@ -96,10 +93,10 @@ const   people = [
           );
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>
-        <AiOutlineArrowLeft  />
+          <AiOutlineArrowLeft />
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
-        <AiOutlineArrowRight />
+          <AiOutlineArrowRight />
         </button>
       </div>
     </section>

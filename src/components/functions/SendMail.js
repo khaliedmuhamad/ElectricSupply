@@ -1,28 +1,26 @@
-import React, { useRef , useState} from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { multilang } from "./multilingual";
 
 function SendMail(props) {
-
   let Language = props.lang;
   let footerLang = multilang(Language).footer;
-  const [email,setEmail] = useState('')
-  const [massage,setMassage] = useState('')
+  const [email, setEmail] = useState("");
+  const [massage, setMassage] = useState("");
   const form = useRef();
 
-  const alertPlaceholder = document.getElementById('successMassageForm')
+  const alertPlaceholder = document.getElementById("successMassageForm");
   const alert = (message, type) => {
-    const wrapper = document.createElement('div')
+    const wrapper = document.createElement("div");
     wrapper.innerHTML = [
       `<div class=" top-0 alert alert-${type} alert-dismissible" role="alert">`,
       `   <div>${message}</div>`,
       '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('')
-  
-    alertPlaceholder.append(wrapper)
-  }
+      "</div>",
+    ].join("");
 
+    alertPlaceholder.append(wrapper);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,16 +34,14 @@ function SendMail(props) {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setEmail("");
+          setMassage("");
+          alert("your Email send successfuly 🐱‍🏍", "success");
         },
         (error) => {
-          console.log(error.text);
+          alert("Sorry try again 🐱‍🏍", "info");
         }
       );
-      
-      setEmail('');
-      setMassage('');
-      alert('your Email send successfuly 🐱‍🏍', 'success')
   };
 
   return (
@@ -58,8 +54,9 @@ function SendMail(props) {
           id="exampleFormControlInput1"
           name="user_email"
           placeholder={footerLang.placeholder}
-          onChange={(e)=>setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           value={email}
+          required
         />
       </div>
       <div className="mb-3">
@@ -70,8 +67,9 @@ function SendMail(props) {
           id="exampleFormControlTextarea1"
           placeholder={footerLang.placeholder}
           rows="3"
-          onChange={(e)=>setMassage(e.target.value)}
+          onChange={(e) => setMassage(e.target.value)}
           value={massage}
+          required
         />
       </div>
       <div className="mb-3">
@@ -80,7 +78,6 @@ function SendMail(props) {
           type="submit"
           value="Send"
           rows="3"
-
         >
           submit
         </button>
