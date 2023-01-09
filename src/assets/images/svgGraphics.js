@@ -109,8 +109,8 @@ export const homesvgs = {
   ),
   smallthunders: (
     <svg
-      width=""
-      height=""
+      width="auto"
+      height="auto"
       viewBox="0 0 1440 639"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
