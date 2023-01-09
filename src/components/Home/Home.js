@@ -11,7 +11,6 @@ export const Home = (props) => {
   let homeLang = multilang(Language).home;
   return (
     <section className="home" id="home">
-
       <div className="small-thunders">{homesvgs.smallthunders}</div>
       <div className="container h-100">
         <div className="d-flex flex-column flex-sm-row h-100 justify-content-between align-items-center">
@@ -42,7 +41,7 @@ export const Home = (props) => {
               </div>
               <div className="w-100 w-md-75 ">
                 <div className="home-img-overlay">
-                  <img src={electricMan} width="100%" alt="electrician" />
+                  <img src={electricMan} width="90%" alt="electrician" />
                 </div>
               </div>
             </div>

@@ -1,8 +1,14 @@
 .landing {
   background: var(--bg);
-
-
+position: relative;
+overflow: hidden;
 }
+.wave-top{
+  position: absolute;
+  inset: -50px 0px 0 0;
+  overflow: hidden
+}
+
 ::-webkit-scrollbar {
   width: auto;
   scroll-behavior: smooth;
@@ -42,4 +48,36 @@
   fill: #3751b7;
 }
 
+/* Responsive navbar */
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap */
 
+/*/ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/*/ Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wave-top{
+    inset: -50px 0px 0px -500px;
+  }
+}
+
+
+/*/ Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .wave-top{
+    inset: -100px 0px 0px -420px;
+  }
+}
+
+/*/ X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .wave-top{
+    inset: -100px 0px 0px -250px;
+  }
+}
+
+/*/ XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

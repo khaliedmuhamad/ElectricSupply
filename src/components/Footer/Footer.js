@@ -12,9 +12,9 @@ export const Footer = (props) => {
 
 const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
   return (
-    <footer className='footer ' id='contact'>
+    <footer className='footer bg-sm-none' id='contact'>
 
-        <div className='conatent py-5'>
+        <div className='conatent py-5 w-sm-100'>
             <div className='container py-5'>
             <div className='d-flex justify-content-start align-items-center flex-column flex-md-row  '>
                 <div className='left  col-md-4 col-12'>
@@ -34,7 +34,7 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
                         </ul>
                     </div>
                 </div>
-                <div className='right  col-md-8 col-12'>
+                <div className='right  col-md-6 col-12'>
                     <div className='right-overlay  px-md-5 px-0'>
                     <div className='top'>
                         <div className='d-flex'>
@@ -62,7 +62,7 @@ const socialData =[<ImFacebook2 />,<ImTwitter />,<ImLinkedin  />,<ImPaypal  />]
                     </div>
             </div>
             </div>
-            <div className='map'>
+            <div className='map d-block d-none d-sm-block'>
         <Map />
         </div>
         </div>

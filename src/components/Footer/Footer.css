@@ -66,4 +66,21 @@ color: rgba(255, 255, 255, 0.67);
             font-size: 12px;
             line-height: 21px;
         }
+        .footer{
+        
+            background-image: none;
+  
+        
+        }
+        .map{
+            width: 100%;
+        }
+        .conatent{
+   
+            width: 100%;
+            inset: 0  0;
+          
+            background-color: #270085;
+        }
+
 }

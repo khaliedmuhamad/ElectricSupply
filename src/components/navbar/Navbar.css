@@ -7,6 +7,10 @@
   background: var(--violet);
   color: var(--FFF) !important;
 }
+.nav-button a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
 .navbar-brand span {
   color: var(--FFF);
 }
@@ -66,13 +70,14 @@ nav .dropdown-menu {
 
 /*/ Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  nav div.container {
-    flex-direction: row;
-  }
+
 }
 
 /*/ X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  nav div.container {
+    flex-direction: row;
+  }
 }
 
 /*/ XX-Large devices (larger desktops, 1400px and up)*/
