@@ -1,9 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { multilang } from "../functions/multilingual";
-import { brandLogo, homesvgs } from "../../assets/images/svgGraphics";
+import {  homesvgs } from "../../assets/images/svgGraphics";
 import electricMan from "../../assets/images/electricMan.png";
 import ReactTypingEffect from "react-typing-effect";
+import { Wtswidget } from "../wa-widget/Wtswidget";
 
 export const Home = (props) => {
   let Language = props.lang;
@@ -27,13 +28,7 @@ export const Home = (props) => {
           <div className="offset-1 col-7 col-md-5 offset-md-2 home-right">
             <div className="w-md-50 ms-auto position-relative">
               <div className="home-card d-flex flex-column">
-                <button className="btn btn-transparent text-primary  btn-md home-card-button">
-                  {brandLogo}{" "}
-                  <span className="text-primary">
-                    {multilang(Language).navbar.brand}
-                  </span>
-                </button>
-
+                  <Wtswidget /> <span>{multilang(props.lang).navbar.brand}</span>
                 <div className="home-card-paragraph">
                   <br />
                   <ReactTypingEffect text={homeLang.card[0]} />

@@ -61,87 +61,35 @@ export const LandingPage = () => {
   return (
     <div className={`landing ${!dark ? "light" : "dark"} page`}>
       <div className="wave-top">
-        <svg
-          width="1440"
-          height="1024"
-          viewBox="0 0 1440 1024"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1376.47 -0.0723376C1384.3 -0.0723504 1390.76 6.08218 1391.14 13.9115L1399.9 196.297C1402.34 247.151 1380.29 296.099 1340.57 327.956L773.335 782.972C734.658 813.997 683.721 825.203 635.594 813.274L123.134 686.257C52.2008 668.675 2.38608 605.006 2.38594 531.927L2.38501 10.0079C2.385 4.44076 6.89802 -0.0723509 12.4652 -0.0724668L343.426 -0.0723473L1376.47 -0.0723376Z"
-            fill="url(#paint0_linear_220_31)"
-          />
-          <g filter="url(#filter0_f_220_31)">
-            <path
-              d="M529.86 -370.299C639.686 -349.09 722.059 -257.51 731.555 -146.058L752.801 103.29C761.756 208.385 703.788 307.794 607.913 351.76L363.146 464.004C263.725 509.596 146.209 485.265 73.064 403.944L-86.583 226.452C-159.728 145.132 -171.517 25.7034 -115.684 -68.3495L21.771 -299.899C75.6125 -390.598 180.585 -437.747 284.148 -417.748L529.86 -370.299Z"
-              fill="white"
-              fillOpacity="0.05"
-            />
-          </g>
-          <g filter="url(#filter1_f_220_31)">
-            <path
-              d="M1313.3 179.266C1356.37 188.089 1383.61 230.778 1373.47 273.553V273.553C1370.22 287.261 1363.31 299.831 1353.48 309.924L1313 351.5L948 642.5L856.812 721.687L827.417 746.516C803.56 766.668 768.593 766.488 744.945 746.092V746.092C742.626 744.093 740.455 741.928 738.448 739.615L648.121 635.494C607.013 588.108 616.339 515.488 668.087 480.027V480.027L709.62 446.084C732.974 426.997 752.383 403.54 766.759 377.025L792.858 328.889C799.571 316.509 805.142 303.543 809.503 290.153L837.856 203.095C839.527 197.967 840.768 192.708 841.568 187.374V187.374C849.853 132.141 902.773 95.1603 957.487 106.37L1313.3 179.266Z"
-              fill="white"
-              fillOpacity="0.05"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_220_31"
-              x="-154.713"
-              y="-426.297"
-              width="912.421"
-              height="917.066"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="2"
-                result="effect1_foregroundBlur_220_31"
-              />
-            </filter>
-            <filter
-              id="filter1_f_220_31"
-              x="618.42"
-              y="100.364"
-              width="761.167"
-              height="665.146"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="2"
-                result="effect1_foregroundBlur_220_31"
-              />
-            </filter>
-            <linearGradient
-              id="paint0_linear_220_31"
-              x1="137.379"
-              y1="564.016"
-              x2="1519.38"
-              y2="236.016"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0.361755" stopColor="#8D71E8" />
-              <stop offset="0.981834" stopColor="#617FF5" />
-            </linearGradient>
-          </defs>
-        </svg>
+
+      <svg width="882" height="961" viewBox="0 0 882 961" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M387.607 53.8719C420.38 34.8968 460.787 34.8475 493.607 53.7425L768.963 212.271C801.782 231.166 822.028 266.135 822.075 304.005L822.463 621.735C822.509 659.605 802.348 694.623 769.575 713.598L494.607 872.799C461.833 891.774 421.426 891.823 388.607 872.928L113.251 714.399C80.4315 695.504 60.1853 660.536 60.1391 622.665L59.7512 304.936C59.705 267.066 79.8657 232.048 112.639 213.073L387.607 53.8719Z" fill="url(#paint0_linear_225_29)"/>
+<g filter="url(#filter0_f_225_29)">
+<path d="M537.442 157.511C573.172 182.655 583.258 231.211 560.5 268.505L494.542 376.591C439.021 467.573 325.873 505.097 226.989 465.321L164.113 440.029C124.856 424.238 95.6301 390.475 85.627 349.361C73.0978 297.863 92.797 243.886 135.552 212.564L161.408 193.622L263.183 138.632C335.942 99.3207 423.433 98.5341 496.887 136.531L537.442 157.511Z" fill="white" fill-opacity="0.05"/>
+</g>
+<g filter="url(#filter1_f_225_29)">
+<path d="M793.834 522.569C809.385 559.056 811.598 599.993 800.17 637.974C789.718 672.711 768.403 703.339 739.41 725.139L735.833 727.828C728.02 733.703 719.751 738.946 711.104 743.506L608.17 797.796L533.194 839.689C491.327 863.081 442.411 870.536 395.477 860.677L379.276 857.274C370.837 855.502 362.707 852.49 355.15 848.336C300.287 818.184 293.992 741.818 343.177 703.09L486.225 590.454L627.831 484.128C683.1 442.628 762.432 461 793.834 522.569Z" fill="white" fill-opacity="0.05"/>
+</g>
+<defs>
+<filter id="filter0_f_225_29" x="77.9036" y="104.581" width="498.741" height="380.523" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_225_29"/>
+</filter>
+<filter id="filter1_f_225_29" x="305.846" y="457.804" width="505.527" height="411.116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_225_29"/>
+</filter>
+<linearGradient id="paint0_linear_225_29" x1="61" y1="632" x2="828" y2="529" gradientUnits="userSpaceOnUse">
+<stop offset="0.429659" stop-color="#8D71E8"/>
+<stop offset="0.878584" stop-color="#6B82DF"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
       </div>
 
       <Navbar lang={Lang} Setlanguage={seTlang} dark={dark} setDark={setDark} />
