@@ -54,7 +54,6 @@ overflow: hidden;
 
 /* Responsive navbar */
 /* X-Small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap */
 @media (max-width: 576px) {
   .wave-top{
     inset: -400px 0 0px -300px;
@@ -62,6 +61,17 @@ overflow: hidden;
   }
   .wave-top svg{
     transform: scale(0.8);
+    
+  }
+}
+/* No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575px) and (min-width: 300px) {
+  .wave-top{
+    inset: -400px 0 0px -300px;
+
+  }
+  .wave-top svg{
+    transform: scale(0.5);
     
   }
 }
