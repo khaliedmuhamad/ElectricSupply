@@ -2,10 +2,22 @@ import React, { useState } from 'react'
 
 import './add.css'
 import '../DetailProject/Detail.css'
+import { addDoc, collection, setDoc } from 'firebase/firestore'
+import db from '../functions/firestore'
 export const AddProject = (props) => {
-    const [data, setData] = useState({
-        
-    })
+    const [head, setHead] = useState('')
+    const [location, setLocation] = useState('')
+    const [description, setDescription] = useState('')
+    const [paragraph, setParagraph] = useState('')
+    const addDocument = () =>{
+        // Add a new document with a generated id.
+        addDoc(collection(db, "projects-en"), {
+            head: head,
+            location: location,
+            description:description,
+            paragraph:paragraph,
+        });
+    }
   return (
     <div className='modal' id="#addNewProject">
         <div className='modal-dialog  modal-dialog-centered modal-dialog-scrollable'>
@@ -17,27 +29,27 @@ export const AddProject = (props) => {
         <form className='modal-body'>
   <div className="mb-3">
     <label for="head" className="form-label">head</label>
-    <input type="text" className="form-control" id="head"  />
+    <input required type="text" className="form-control" id="head" onBlur={(e)=>{setHead(e.target.value)}}  />
     <div  className="form-text">write the name of project.</div>
   </div>
   <div className="mb-3">
     <label for="location" className="form-label">Location: </label>
-    <input type="text" className="form-control" id="location"  />
+    <input required type="text" className="form-control" id="location"  onBlur={(e)=>{setLocation(e.target.value)}}  />
     <div  className="form-text">We'll never share your Location with anyone else.</div>
   </div>
   <div className="mb-3">
-    <label for="description" className="form-label">Location: </label>
-    <input type="text" className="form-control" id="description"  />
+    <label for="description" className="form-label">description: </label>
+    <input required type="text" className="form-control" id="description" onBlur={(e)=>{setDescription(e.target.value)}}   />
     <div  className="form-text">description ..</div>
   </div>
   <div className="mb-3">
     <label for="paragraph" className="form-label">paragraph: </label>
-    <input type="text" className="form-control" id="paragraph"  />
+    <input required type="text" className="form-control" id="paragraph" onBlur={(e)=>{setParagraph(e.target.value)}}   />
     <div  className="form-text">paragraph ..</div>
   </div>
 
 
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" onSubmit={()=>{addDocument()}} className="btn btn-primary">Submit</button>
 </form>
         </div>
         </div>
