@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-
 import './add.css'
 import '../DetailProject/Detail.css'
-import { addDoc, collection, doc, setDoc } from 'firebase/firestore'
-import db, { storage } from '../functions/firestore'
+import {  collection, doc, setDoc } from 'firebase/firestore'
+import db from '../functions/firestore'
 import { useRef } from 'react'
+import { UploadingTostorage } from '../functions/UploadingTostorage'
 
 export const AddProject = (props) => {
   const [images, setImages] = useState([]);
@@ -27,42 +27,25 @@ export const AddProject = (props) => {
             pdf:pdf
         };
         await setDoc(newCity,data)
-        }
-        
-    const [progress,setProgress] = useState('');
+        }    
+    const [progress,setProgress] = useState(0);
     const inputRef = useRef();
 
-
-        const uploadingTostorage = (e,using) => {
-          const file = e.target.files[0];
-      
-          const storageRef = storage.ref(file.name);
-      
-          storageRef.put(file).on(
-            'state_changed',
-            (snap) => {
-              let percent = (snap.bytesTransferred / snap.totalBytes) * 100;
-              setProgress(percent);
-            },
-            (err) => console.log(err),
-            async () => {
-              const url = await storageRef.getDownloadURL();
-                  url.push(using);
-              setProgress(0);
-              inputRef.current.value = '';
-            }
-          );
-        };
 const handelSub = ()=>{
     props.setAddSow(false);
     addDocument();
-    setHead(' ');
-    setLocation(' ');
-    setDescription(' ');
-    setParagraph(' ');
+    setHead('');
+    setLocation('');
+    setDescription('');
+    setParagraph('');
     setImages([]);
     setpdf([]);
 }
+    const [image, setImage] = useState(null);
+    const [url, setUrl] = useState(null);
+
+    console.log('%cAddProject.JS line:94 image', 'color: #007acc;', images);
+
   return (
     <div className='modal' id="#addNewProject">
         <div className='modal-dialog  modal-dialog-centered modal-dialog-scrollable'>
@@ -71,7 +54,8 @@ const handelSub = ()=>{
         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
         <button type="button" onClick={()=>props.setAddSow(false)} class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-        <form className='modal-body' role='button'>
+
+        <form className='modal-body' role='button' >
   <div className="mb-3">
     <label for="head" className="form-label">head</label>
     <input required type="text" className="form-control" id="head" onBlur={(e)=>{setHead(e.target.value)}}  />
@@ -93,25 +77,25 @@ const handelSub = ()=>{
     <div  className="form-text">paragraph ..</div>
   </div>
   <div className="mb-3">
-    <label for="uplaodingimages" className="form-label">Upload Images: </label>
-    <input required type="file" className="form-control" id="uplaodingimages" ref={inputRef}  onChange={(e)=>{uploadingTostorage(e.target.value,images)}}   />
-    <div  className="form-text">Uploading Images: {progress}</div>
-  </div>
-  <div className='d-flex flex-wrap flex-column'>
-    {images.length > 1 ? images.map((el,i)=>
-    <div className='image-cancel ' width="80px"  onClick={()=>{return images.splice(i,1)}} >
-    <img className='imageUploading' width="100%" height={"auto"} alt={el} />
-    </div>
-    ):"No images uploading"}
-  </div>
-  <div className="mb-3">
-    <label for="uplaodingpdf" className="form-label">Upload Images: </label>
-    <input required ref={inputRef}  type="file" className="form-control" id="uplaodingpdf" onChange={(e)=>{uploadingTostorage(e.target.value,pdf)}}   />
-    <div  className="form-text">Uploading pdf: {progress}</div>
+    <label for="paragraph" className="form-label">images upload: </label>
+    <UploadingTostorage geturl={setImage} image={images} index='0' />
+    <UploadingTostorage geturl={setImage} image={images} index='1'/>
+    <UploadingTostorage geturl={setImage} image={images} index='2'/>
+    <UploadingTostorage geturl={setImage} image={images} index='3'/>
+    <UploadingTostorage geturl={setImage} image={images} index='4'/>
+
   </div>
 
 
-  <button type="" onClick={()=>{handelSub() }} className="btn btn-primary">Submit</button>
+
+
+
+
+
+
+
+
+  <button type="submit" onClick={()=>{handelSub() }} className="btn btn-primary">Submit</button>
 </form>
         </div>
         </div>

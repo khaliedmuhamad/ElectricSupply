@@ -98,6 +98,15 @@ const [addShow, setAddSow] = useState(false)
 <FaInfoCircle /> mehr
 </button>
                       <div className="media-overlay">
+                      {el.images[0]?
+                      <img
+                          src={el.images[0]}
+                          alt={el.head}
+                          height="100%"
+                          width="100%"
+                        />
+                        :""
+                       }
                       </div>
                       <div className="card-body">
                         <h3>{el.head}</h3>
