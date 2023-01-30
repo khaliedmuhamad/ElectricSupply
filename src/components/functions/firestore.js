@@ -21,5 +21,6 @@ const dp = getFirestore(firebaseApp);
 const storage = getStorage(firebaseApp);
 
 
+export{firebaseApp};
 export{storage};
 export default dp;

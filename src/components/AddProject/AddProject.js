@@ -2,22 +2,38 @@ import React, { useState } from 'react'
 
 import './add.css'
 import '../DetailProject/Detail.css'
-import { addDoc, collection, setDoc } from 'firebase/firestore'
+import { addDoc, collection, doc, setDoc } from 'firebase/firestore'
 import db from '../functions/firestore'
 export const AddProject = (props) => {
-    const [head, setHead] = useState('')
-    const [location, setLocation] = useState('')
-    const [description, setDescription] = useState('')
-    const [paragraph, setParagraph] = useState('')
-    const addDocument = () =>{
+    const [head, setHead] = useState(' ')
+    const [location, setLocation] = useState(' ')
+    const [description, setDescription] = useState(' ')
+    const [paragraph, setParagraph] = useState(' ')
+
+ 
+    const addDocument = async() =>{
         // Add a new document with a generated id.
-        addDoc(collection(db, "projects-en"), {
+        const newCity=   doc(collection(db ,'projects-en'))
+        let data = {
             head: head,
             location: location,
             description:description,
             paragraph:paragraph,
-        });
-    }
+            date:" ",
+            images:["","",""]
+        };
+        await setDoc(newCity,data)
+        }
+        
+    
+const handelSub = ()=>{
+    props.setAddSow(false);
+    addDocument();
+    setHead(' ');
+    setLocation(' ');
+    setDescription(' ');
+    setParagraph(' ');
+}
   return (
     <div className='modal' id="#addNewProject">
         <div className='modal-dialog  modal-dialog-centered modal-dialog-scrollable'>
@@ -26,7 +42,7 @@ export const AddProject = (props) => {
         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
         <button type="button" onClick={()=>props.setAddSow(false)} class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-        <form className='modal-body'>
+        <form className='modal-body' role='button'>
   <div className="mb-3">
     <label for="head" className="form-label">head</label>
     <input required type="text" className="form-control" id="head" onBlur={(e)=>{setHead(e.target.value)}}  />
@@ -49,7 +65,7 @@ export const AddProject = (props) => {
   </div>
 
 
-  <button type="submit" onSubmit={()=>{addDocument()}} className="btn btn-primary">Submit</button>
+  <button type="" onClick={()=>{handelSub() }} className="btn btn-primary">Submit</button>
 </form>
         </div>
         </div>
