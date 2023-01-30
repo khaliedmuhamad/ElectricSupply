@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { multilang } from "../../components/functions/multilingual";
 import "./Projects.css";
-import {GetImge} from '../functions/GetImgStorage'
+
 import db from '../functions/firestore'
 import { collection, getDocs} from "firebase/firestore";
-import { VscGlobe } from "react-icons/vsc";
 import { DetailProject } from "../DetailProject/DetailProject";
 import { FaInfoCircle } from "react-icons/fa";
 import { BiMessageSquareAdd } from "react-icons/bi";
@@ -66,7 +65,6 @@ const [addShow, setAddSow] = useState(false)
               const newData = querySnapshot.docs
                   .map((doc) => ({...doc.data(), id:doc.id,urls:[...doc.data().images]}));
               setData(newData); 
-
           })
      
   }

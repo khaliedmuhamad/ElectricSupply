@@ -4,13 +4,12 @@ import "./Opinions.css";
 import { multilang } from "../../components/functions/multilingual";
 import { BsFillStarFill } from "react-icons/bs";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import  db  from "../functions/firestore";
 const Opinions = (props) => {
   let Language = props.lang;
   const sayLang = multilang(Language).say;
-  let peopleLang1 = multilang(Language).ourteam.people[0];
-  let peopleLang2 = multilang(Language).ourteam.people[1];
-  let peopleLang3 = multilang(Language).ourteam.people[2];
-  let peopleLang4 = multilang(Language).ourteam.people[3];
   const [, setIndex] = useState(0);
 
   const settings = {
@@ -19,7 +18,7 @@ const Opinions = (props) => {
     customPaging: function (i) {
       return (
         <li className="dotsItem">
-          <img src={dataclients[i].image} alt="ddd" width={100} height="100" />
+          <img src={data[i].img} alt="ddd" width={100} height="100" />
         </li>
       );
     },
@@ -62,40 +61,21 @@ const Opinions = (props) => {
     ],
   };
 
-  const dataclients = [
-    {
-      image:
-        "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: peopleLang1.name,
-      role: peopleLang1.title,
-      rate: 3,
-      feedback: peopleLang1.quote,
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/3936894/pexels-photo-3936894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: peopleLang2.name,
-      role: peopleLang2.title,
-      rate: 4,
-      feedback: peopleLang2.quote,
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: peopleLang3.name,
-      role: peopleLang3.title,
-      rate: 1,
-      feedback: peopleLang3.quote,
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      name: peopleLang4.name,
-      role: peopleLang4.title,
-      rate: 3,
-      feedback: peopleLang4.quote,
-    },
-  ];
+  const [data,setArra] = useState([]);
+  useEffect(() => {
+    const fetchPost = async () => {
+    
+      await getDocs(collection(db ,'Clients'))
+          .then((querySnapshot)=>{               
+              const newData = querySnapshot.docs
+                  .map((doc) => ({...doc.data(), id:doc.id}));
+                  setArra(newData); 
+          })
+     
+  }
+    fetchPost()
+     }, []);
+
   return (
     <section className="opinios py-5 ">
       <div className="container">
@@ -104,15 +84,15 @@ const Opinions = (props) => {
 
         <div>
           <Slider {...settings}>
-            {dataclients
-              ? dataclients.map((el, n) => {
+            {data
+              ? data.map((el, n) => {
                   return (
                     <div className="py-2" key={`${el.name}+${n}`}>
                       <div className="card  bg-transparent border-0">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                           <div className="image-overlay rounded-circle">
                             <img
-                              src={el.image}
+                              src={el.img}
                               width="100%"
                               height="100%"
                               alt="magew"
@@ -123,7 +103,7 @@ const Opinions = (props) => {
                               {el.name}
                             </h3>
                             <p className="text-capitalize text-4 my-1">
-                              {el.role}
+                              {el.jop}
                             </p>
                           </div>
                           <div className="rating mt-1">
@@ -138,7 +118,7 @@ const Opinions = (props) => {
                             <span className="quot">
                               <FaQuoteLeft />
                             </span>
-                            <p>{el.feedback}</p>
+                            <p>{el.idea}</p>
                             <span className="quot">
                               {" "}
                               <FaQuoteRight />

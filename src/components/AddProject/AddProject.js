@@ -3,13 +3,16 @@ import React, { useState } from 'react'
 import './add.css'
 import '../DetailProject/Detail.css'
 import { addDoc, collection, doc, setDoc } from 'firebase/firestore'
-import db from '../functions/firestore'
+import db, { storage } from '../functions/firestore'
+import { useRef } from 'react'
+
 export const AddProject = (props) => {
+  const [images, setImages] = useState([]);
     const [head, setHead] = useState(' ')
     const [location, setLocation] = useState(' ')
     const [description, setDescription] = useState(' ')
     const [paragraph, setParagraph] = useState(' ')
-
+    const [pdf, setpdf] = useState('');
  
     const addDocument = async() =>{
         // Add a new document with a generated id.
@@ -20,12 +23,36 @@ export const AddProject = (props) => {
             description:description,
             paragraph:paragraph,
             date:" ",
-            images:["","",""]
+            images:images,
+            pdf:pdf
         };
         await setDoc(newCity,data)
         }
         
-    
+    const [progress,setProgress] = useState('');
+    const inputRef = useRef();
+
+
+        const uploadingTostorage = (e,using) => {
+          const file = e.target.files[0];
+      
+          const storageRef = storage.ref(file.name);
+      
+          storageRef.put(file).on(
+            'state_changed',
+            (snap) => {
+              let percent = (snap.bytesTransferred / snap.totalBytes) * 100;
+              setProgress(percent);
+            },
+            (err) => console.log(err),
+            async () => {
+              const url = await storageRef.getDownloadURL();
+                  url.push(using);
+              setProgress(0);
+              inputRef.current.value = '';
+            }
+          );
+        };
 const handelSub = ()=>{
     props.setAddSow(false);
     addDocument();
@@ -33,6 +60,8 @@ const handelSub = ()=>{
     setLocation(' ');
     setDescription(' ');
     setParagraph(' ');
+    setImages([]);
+    setpdf([]);
 }
   return (
     <div className='modal' id="#addNewProject">
@@ -62,6 +91,23 @@ const handelSub = ()=>{
     <label for="paragraph" className="form-label">paragraph: </label>
     <input required type="text" className="form-control" id="paragraph" onBlur={(e)=>{setParagraph(e.target.value)}}   />
     <div  className="form-text">paragraph ..</div>
+  </div>
+  <div className="mb-3">
+    <label for="uplaodingimages" className="form-label">Upload Images: </label>
+    <input required type="file" className="form-control" id="uplaodingimages" ref={inputRef}  onChange={(e)=>{uploadingTostorage(e.target.value,images)}}   />
+    <div  className="form-text">Uploading Images: {progress}</div>
+  </div>
+  <div className='d-flex flex-wrap flex-column'>
+    {images.length > 1 ? images.map((el,i)=>
+    <div className='image-cancel ' width="80px"  onClick={()=>{return images.splice(i,1)}} >
+    <img className='imageUploading' width="100%" height={"auto"} alt={el} />
+    </div>
+    ):"No images uploading"}
+  </div>
+  <div className="mb-3">
+    <label for="uplaodingpdf" className="form-label">Upload Images: </label>
+    <input required ref={inputRef}  type="file" className="form-control" id="uplaodingpdf" onChange={(e)=>{uploadingTostorage(e.target.value,pdf)}}   />
+    <div  className="form-text">Uploading pdf: {progress}</div>
   </div>
 
 
