@@ -1,0 +1,50 @@
+.modal{
+    background: var(--shadow1);
+    display: block;
+    backdrop-filter: blur(2px);
+    z-index: 9999999;
+
+}
+.modal.detail .modal-dialog{
+    width: 90vw !important;
+    max-width: 90vw;
+    min-height: 70vh !important;
+}
+.modal-body .content{
+height: 75vh !important;
+}
+.modal-header h1{
+    line-height: 1.5rem;
+    color: var(--lighviolet);
+    font-weight: 200;
+}
+.modal-body .content div h3{
+    font-size: 2.5rem;
+    color: var(--violet);
+    line-height: 2.5rem;
+    position: relative;
+}
+.modal-body .content div h3::after{
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    content: " ";
+    background-color: var(--violet);
+    left: 0;
+    bottom: -1rem;
+    opacity: 0.5;
+}
+
+.modal-body .content div p span{
+    font-size: 1.1rem;
+    color: var(--lighviolet);
+    line-height: 2.5rem;
+}
+.modal-body .content div p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--secondTxt);
+    line-height: 2.5rem;
+}

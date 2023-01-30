@@ -131,7 +131,7 @@ export const Services = (props) => {
                 ? ""
                 : servicesData.map((el, n) => {
                     return (
-                      <div className="service-card p-2 col-3 col-md-6 " key={n}>
+                      <div className="service-card p-2 col-3 col-md-6 " key={`${el.head}+${n}`}>
                         <div
                           className={`card-overlay text-center w-100  d-flex flex-column justify-content-center align-items-center ${
                             n === bigEl.index ? "active" : ""

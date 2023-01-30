@@ -10,6 +10,7 @@
     "autoprefixer": "^10.4.12",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.1",
+    "firebase": "^9.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",

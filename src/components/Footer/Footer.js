@@ -32,7 +32,7 @@ export const Footer = (props) => {
                     : socialData.map((el, n) => {
                         return (
                           <li
-                            key={n}
+                            key={`${el}+${n}`}
                             className="col social-footer-items mx-3 list-unstyled text-light"
                           >
                             <Anochor

@@ -80,7 +80,7 @@ const Reputation = (props) => {
                     return (
                       <div
                         className="col-12 col-lg-6 p-sm-1 p-2 text-center"
-                        key={n}
+                        key={`${el.head}+${n}`}
                       >
                         <div className="reputation-card px-1 py-1 py-md-3 d-flex flex-md-column flex-row align-items-center justify-content-center ">
                           <div className="reputation-card-icon col-md-12 col-4 text-sm-sm">

@@ -84,7 +84,7 @@ const OurTeam = (props) => {
             position = "lastSlide";
           }
           return (
-            <article className={position} key={id}>
+            <article className={position} key={`${name}+${id}`}>
               <img src={image} alt={name} className="person-img" />
               <h4>{name}</h4>
               <p className="title">{title}</p>

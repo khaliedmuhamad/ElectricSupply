@@ -37,7 +37,7 @@ export const About = (props) => {
                     ? ""
                     : aboutData.map((el, n) => {
                         return (
-                          <div className="col-12 col-sm-6 p-2" key={n}>
+                          <div className="col-12 col-sm-6 p-2" key={`${el.head}+${n}`}>
                             <div className="my-5 ">
                               <h2 className="about-strength-head">{el.haed}</h2>
                               <p className="about-strength-paragraph">

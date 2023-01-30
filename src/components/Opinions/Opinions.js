@@ -41,7 +41,7 @@ const Opinions = (props) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -107,7 +107,7 @@ const Opinions = (props) => {
             {dataclients
               ? dataclients.map((el, n) => {
                   return (
-                    <div className="py-2" key={n}>
+                    <div className="py-2" key={`${el.name}+${n}`}>
                       <div className="card  bg-transparent border-0">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                           <div className="image-overlay rounded-circle">
@@ -128,10 +128,10 @@ const Opinions = (props) => {
                           </div>
                           <div className="rating mt-1">
                             {Array(!el.rate ? 0 : el.rate).fill(
-                              <BsFillStarFill key={"good"+el} className="mx-1 text-warning" />
+                              <BsFillStarFill  className="mx-1 text-warning" />
                             )}
                             {Array(!el.rate ? 0 : 5 - el.rate).fill(
-                              <BsFillStarFill key={"sad"+el} className="mx-1 text-secondary" />
+                              <BsFillStarFill  className="mx-1 text-secondary" />
                             )}
                           </div>
                           <div className="feedback text-center  w-50 ">
