@@ -51,7 +51,7 @@ const handelSub = ()=>{
         <div className='modal-dialog  modal-dialog-centered modal-dialog-scrollable'>
         <div className='modal-content'>
         <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Project</h1>
         <button type="button" onClick={()=>props.setAddSow(false)} class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 

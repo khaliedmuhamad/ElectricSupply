@@ -22,7 +22,7 @@ export const Projects = (props) => {
     infinite: true,
     centerPadding: "20px",
     autoPlay: true,
-    slidesToShow: 3,
+    slidesToShow:2,
     speed: 500,
     afterChange: (e) => setIndex(e),
     responsive: [
@@ -77,16 +77,12 @@ const [addShow, setAddSow] = useState(false)
      }
   return (
     <section className="projects  py-5 " id="projects">
-      {addShow?<AddProject setAddSow={setAddSow}/>:""}
+     
       
       <div className="">
 
         <h2 className="head-section  text-center py-3 mb-5">
           {projectsLang.header}
-          
-            <button type="button" onClick={()=>setAddSow(true)} class="btn btn-primary" data-bs-toggle="#addNewProject" data-bs-target="#staticBackdrop">
-            hinzufügen <BiMessageSquareAdd /> 
-            </button>
         </h2>
         <Slider {...settings}>
           {dataProjects?

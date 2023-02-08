@@ -5,6 +5,7 @@ import { multilang } from "../functions/multilingual";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { CgSun } from "react-icons/cg";
 import Anochor from "../functions/Anochor";
+import { Link } from "react-router-dom";
 
 export const Navbar = (props) => {
   let Lang = props.lang;
@@ -123,13 +124,12 @@ export const Navbar = (props) => {
             <button className="btn btn-md text-light"></button>
             <li className={`nav-button rounded-pill  shadow text-light`}>
               <button className="btn btn-md text-light rounded-pill">
-                <Anochor
+                <Link
                   className="text-light"
-                  href="https://webmail.strato.com/appsuite/ui"
-                  target="__blank"
+                  to="/Login"
                 >
                   {multilang(Lang).navbar.sign}
-                </Anochor>
+                </Link>
               </button>
             </li>
           </ul>
