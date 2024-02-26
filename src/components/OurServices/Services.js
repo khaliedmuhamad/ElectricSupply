@@ -16,93 +16,93 @@ import solar2 from "../../assets/images/services/solar2.jpg";
 
 import { TbPlugConnected } from "react-icons/tb";
 import "./Services.css";
+import Slider from "react-slick";
 export const Services = (props) => {
   let Language = props.lang;
   const servicesLang = multilang(Language).services;
-  const servicesLangHead = multilang(Language).services.info.head;
-  const servicesLangPara = multilang(Language).services.info.paragraph;
+  const servicesData = multilang(Language).services.servicesData;
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const servicesData = [
-    {
-      head: servicesLangHead[0],
-      paragraph: servicesLangPara,
-      icon: <TbPlugConnected />,
-      imgSrc: connect,
-    },
-    {
-      head: servicesLangHead[1],
-      paragraph: servicesLangPara,
-      icon: <FaSolarPanel />,
-      imgSrc: solar,
-    },
-    {
-      head: servicesLangHead[2],
-      paragraph: servicesLangPara,
-      icon: <VscBook />,
-      imgSrc: trainning,
-    },
-    {
-      head: servicesLangHead[3],
-      paragraph: servicesLangPara,
-      icon: <BsLifePreserver />,
-      imgSrc: aftersales,
-    },
-    {
-      head: servicesLangHead[0],
-      paragraph: servicesLangPara,
-      icon: <TbPlugConnected />,
-      imgSrc: connect2,
-    },
-    {
-      head: servicesLangHead[1],
-      paragraph: servicesLangPara,
-      icon: <FaSolarPanel />,
-      imgSrc: solar2,
-    },
-    {
-      head: servicesLangHead[2],
-      paragraph: servicesLangPara,
-      icon: <VscBook />,
-      imgSrc: trainning2,
-    },
-    {
-      head: servicesLangHead[3],
-      paragraph: servicesLangPara,
-      icon: <BsLifePreserver />,
-      imgSrc: aftersales2,
-    },
-  ];
+   const arrServices =[
+    servicesData.toSpliced(7,28),
+    servicesData.toSpliced(15,20).toSpliced(0,8),
+    servicesData.toSpliced(23,1).toSpliced(0,16),
+    servicesData.toSpliced(0,28),
+   ]
+
+  const [, setIndex] = useState(0);
+
   const [bigEl, SetBigEL] = useState({
     head: servicesData[0].head,
-    paragraph: servicesData[0].paragraph[0],
+    paragraph: servicesData[0].paragraph,
     icon: servicesData[0].icon,
-    index: 0,
+    id: 0,
     imgSrc: servicesData[0].imgSrc,
   });
 
   const servicesDataLength = servicesData.length - 1;
 
+  const settings = {
+    className: "center",
+    dots: true,
+    infinite: true,
+    centerPadding: "20px",
+    autoPlay: true,
+    slidesToShow:1,
+    speed: 500,
+    afterChange: (e) => setIndex(e),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  };
+
+  const changeContentBigRect = (e) => {
+    SetBigEL({
+      head: servicesData[e].head,
+      paragraph: servicesData[e].paragraph,
+      icon: servicesData[e].icon,
+      id: e,
+      imgSrc: servicesData[e].imgSrc,
+    });
+  };
+
   useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const changeContentBigRect = (e) => {
-      SetBigEL({
-        head: servicesData[e].head,
-        paragraph: servicesData[e].paragraph[e],
-        icon: servicesData[e].icon,
-        index: e,
-        imgSrc: servicesData[e].imgSrc,
-      });
-    };
+    
     const interval = setInterval(() => {
-      
-      if (bigEl.index === servicesDataLength) {
+      if (bigEl.id === servicesDataLength) {
         return changeContentBigRect(0);
       } else {
-        return changeContentBigRect(bigEl.index + 1);
+        return changeContentBigRect(bigEl.id + 1);
       }
     }, 4000);
     return () => clearInterval(interval);
-  }, [bigEl.index, bigEl, servicesDataLength, servicesData]);
+  }, [bigEl.id, bigEl, servicesDataLength, servicesData]);
 
   return (
     <section className="services py-2" id="services">
@@ -125,7 +125,9 @@ export const Services = (props) => {
               </div>
             </div>
           </div>
+
           <div className="small-rects col-md-6 col-12">
+            
             <div className="d-flex flex-wrap">
               {!servicesData
                 ? ""
@@ -134,7 +136,7 @@ export const Services = (props) => {
                       <div className="service-card p-2 col-3 col-md-6 " key={`${el.head}+${n}`}>
                         <div
                           className={`card-overlay text-center w-100  d-flex flex-column justify-content-center align-items-center ${
-                            n === bigEl.index ? "active" : ""
+                            n === bigEl.id ? "active" : ""
                           }`}
                           onClick={() => {
                             changeContentBigRect(n);
@@ -151,6 +153,10 @@ export const Services = (props) => {
                     );
                   })}
             </div>
+   
+
+   
+
           </div>
         </div>
       </div>

@@ -4,9 +4,7 @@ import "./Opinions.css";
 import { multilang } from "../../components/functions/multilingual";
 import { BsFillStarFill } from "react-icons/bs";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import { useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import  dp  from "../functions/firestore";
+
 import { BiMessageSquareAdd } from "react-icons/bi";
 import { AddComment } from "../functions/AddComment";
 const Opinions = (props) => {
@@ -64,28 +62,13 @@ const Opinions = (props) => {
   };
 
   const [data,setArra] = useState([]);
-  useEffect(() => {
-    const fetchPost = async () => {
-    
-      await getDocs(collection(dp ,'users'))
-          .then((querySnapshot)=>{               
-              const newData = querySnapshot.docs
-                  .map((doc) => ({...doc.data(), id:doc.id}));
-                  setArra(newData);
-          })
-  }
-    fetchPost()
-     }, []);
+
 
   return (
     <section className="opinios py-5 ">
             {addShow?<AddComment setAddSow={setAddSow}/>:""}
       <div className="container">
         <h3 className="text-center head ">{sayLang.head}
-        
-        <button type="button" onClick={()=>setAddSow(true)} class="btn btn-primary" data-bs-toggle="#addNewComment" data-bs-target="#staticBackdrop">
-            hinzufügen <BiMessageSquareAdd /> 
-            </button>
         </h3>
         <p className="text-center mb-5 parag">{sayLang.parag}</p>
 

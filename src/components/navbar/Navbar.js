@@ -15,7 +15,7 @@ export const Navbar = (props) => {
   const [dark, setDark] = useState(darkness);
 
   return (
-    <nav className="navbar navbar-expand-md bg-transparent pt-4">
+    <nav className="navbar navbar-expand-md pt-4" >
       <div className="container m-auto">
         <Anochor className="navbar-brand" href="/">
           {brandLogo} <span>{multilang(Lang).navbar.brand}</span>
@@ -121,17 +121,7 @@ export const Navbar = (props) => {
                 </li>
               </ul>
             </li>
-            <button className="btn btn-md text-light"></button>
-            <li className={`nav-button rounded-pill  shadow text-light`}>
-              <button className="btn btn-md text-light rounded-pill">
-                <Link
-                  className="text-light"
-                  to="/Login"
-                >
-                  {multilang(Lang).navbar.sign}
-                </Link>
-              </button>
-            </li>
+
           </ul>
         </div>
       </div>

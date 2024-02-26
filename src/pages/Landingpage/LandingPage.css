@@ -6,7 +6,8 @@ overflow: hidden;
 .wave-top{
   position: absolute;
   inset: -50px 0px 0 0;
-  overflow: hidden
+  overflow: hidden;
+  z-index:1
 }
 
 ::-webkit-scrollbar {
@@ -141,4 +142,14 @@ overflow: hidden;
 }
 .styles-module_whatsappButton__tVits{
   position: static !important;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+
+  width: 100%;
+
 }

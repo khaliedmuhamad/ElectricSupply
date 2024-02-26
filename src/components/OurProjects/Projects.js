@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Slider from "react-slick";
 import { multilang } from "../../components/functions/multilingual";
 import "./Projects.css";
 
-import db from '../functions/firestore'
-import { collection, getDocs} from "firebase/firestore";
 import { DetailProject } from "../DetailProject/DetailProject";
 import { FaInfoCircle } from "react-icons/fa";
-import { BiMessageSquareAdd } from "react-icons/bi";
-import { AddProject } from "../AddProject/AddProject";
+
 export const Projects = (props) => {
   let Language = props.lang;
   const projectsLang = multilang(Language).projects;
@@ -57,20 +54,7 @@ const [show, setShow] = useState(false)
 const [addShow, setAddSow] = useState(false)
 
 
-  useEffect(() => {
-    const fetchPost = async () => {
-    
-      await getDocs(collection(db ,'projects-en'))
-          .then((querySnapshot)=>{               
-              const newData = querySnapshot.docs
-                  .map((doc) => ({...doc.data(), id:doc.id,urls:[...doc.data().images]}));
-              setData(newData); 
-          })
-     
-  }
-    fetchPost()
-   
-     }, []);
+
      const fireFunction = (e) =>{
       setShow(true)
       setPass(e)

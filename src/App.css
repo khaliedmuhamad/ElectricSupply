@@ -43,3 +43,9 @@
   /* identical to box height */
   color: var(--lighviolet);
 }
+body{
+  background: var(--bg);
+}
+.navbar-toggler{
+  background: var(--bgoverlay);
+}

@@ -58,13 +58,9 @@ export const LandingPage = (props) => {
       <Sponsors lang={Lang} />
 
       <Services lang={Lang} />
-
-      <Projects lang={Lang} />
       <Subscribe lang={Lang} />
       <Join lang={Lang} />
-      <Opinions lang={Lang} />
 
-      <OurTeam lang={Lang} />
 
     </div>
   );
