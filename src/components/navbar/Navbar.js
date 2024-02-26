@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { brandLogo } from "../../assets/images/svgGraphics";
+import  brandLogo  from "../../assets/images/logoLight.png";
 import "./Navbar.css";
 import { multilang } from "../functions/multilingual";
 import { BsMoonStarsFill } from "react-icons/bs";
@@ -18,7 +18,8 @@ export const Navbar = (props) => {
     <nav className="navbar navbar-expand-md pt-4" >
       <div className="container m-auto">
         <Anochor className="navbar-brand" href="/">
-          {brandLogo} <span>{multilang(Lang).navbar.brand}</span>
+          <img src={brandLogo} width={150} alt="" />
+    
         </Anochor>
         <button
           className="navbar-toggler"

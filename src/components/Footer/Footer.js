@@ -1,5 +1,5 @@
 import React from "react";
-import { footerBrand } from "../../assets/images/svgGraphics";
+import  footerBrand  from "../../assets/images/logoDark.png";
 import { multilang } from "../../components/functions/multilingual";
 import { ImFacebook2, ImLinkedin, ImPaypal, ImTwitter } from "react-icons/im";
 import Anochor from "../functions/Anochor";
@@ -24,7 +24,9 @@ export const Footer = (props) => {
             <div className="left  col-md-4 col-12">
               <div className="d-flex flex-column justify-content-between align-items-center">
                 <div className="brand-footer text-center  w-100 ">
-                  {footerBrand}
+ 
+                  <img src={footerBrand} width={180} alt="" />
+    
                 </div>
                 <ul className="social-footer d-flex">
                   {!socialData

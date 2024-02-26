@@ -13,7 +13,7 @@ export const Home = (props) => {
   return (
     <section className="home" id="home">
 
-      <div className="small-thunders">{homesvgs.smallthunders}</div>
+    
       <div className="container h-100">
         <div className="d-flex flex-column flex-sm-row h-100 justify-content-between align-items-center">
           <div className="col-12 col-sm-6 text-center text-sm-start home-left">
