@@ -10,6 +10,8 @@ import { AddComment } from "../functions/AddComment";
 const Opinions = (props) => {
   let Language = props.lang;
   const sayLang = multilang(Language).say;
+  const data = multilang(Language).say.data;
+
   const [, setIndex] = useState(0);
   const [addShow, setAddSow] = useState(false)
   const settings = {
@@ -61,7 +63,7 @@ const Opinions = (props) => {
     ],
   };
 
-  const [data,setArra] = useState([]);
+  
 
 
   return (

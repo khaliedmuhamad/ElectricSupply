@@ -56,9 +56,11 @@ export const LandingPage = (props) => {
       <Reputation lang={Lang} />
       <About lang={Lang} />
       <Sponsors lang={Lang} />
+      
 
       <Services lang={Lang} />
       <Subscribe lang={Lang} />
+      <Opinions lang={Lang} />
       <Join lang={Lang} />
 
 

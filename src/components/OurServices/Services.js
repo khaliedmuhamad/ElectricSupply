@@ -133,7 +133,7 @@ export const Services = (props) => {
                 ? ""
                 : servicesData.map((el, n) => {
                     return (
-                      <div className="service-card p-2 col-3 col-md-6 " key={`${el.head}+${n}`}>
+                      <div className="service-card p-2 col-6 col-md-6 " key={`${el.head}+${n}`}>
                         <div
                           className={`card-overlay text-center w-100  d-flex flex-column justify-content-center align-items-center ${
                             n === bigEl.id ? "active" : ""
@@ -142,10 +142,7 @@ export const Services = (props) => {
                             changeContentBigRect(n);
                           }}
                         >
-                          <div className="services-icon text-center  ">
-                            {el.icon}
-                          </div>
-                          <h3 className="services-head d-none d-sm-block">
+                          <h3 className="services-head  d-block">
                             {el.head}
                           </h3>
                         </div>

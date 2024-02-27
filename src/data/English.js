@@ -385,5 +385,29 @@ export const English = {
     head: "What Our Clients Says ?",
     parag:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia facilis dolorum soluta recusandae tempora consequatur corrupti quod quas repellat a",
-  },
+    data:[
+      {
+        name:'James Van',
+        jop:"Vice President",
+        idea:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        rate:5,
+        img:solar
+      },
+      {
+        name:'James Van',
+        jop:"Vice President",
+        idea:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        rate:5,
+        img:trainning2
+      },
+      {
+        name:'James Van',
+        jop:"Vice President",
+        idea:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        rate:5,
+        img:connect
+      },
+    ]
+    },
+
 };
