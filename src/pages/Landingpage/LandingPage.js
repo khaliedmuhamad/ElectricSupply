@@ -64,9 +64,17 @@ export const LandingPage = (props) => {
       <About lang={Lang} />
       </div>
 
+
       <Sponsors lang={Lang} />
+      <div id='services'>
       <Services lang={Lang} />
+      </div>
+
+      <div id='contact'>
       <Subscribe lang={Lang} />
+      </div>
+  
+   
       <Opinions lang={Lang} />
       <Join lang={Lang} />
     </div>

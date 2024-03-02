@@ -14,6 +14,17 @@ export const Navbar = (props) => {
   //dark state
   const [dark, setDark] = useState(darkness);
 
+
+  const scrollToSection = (id) => {
+    if (document.getElementById(id)) {
+      window.scrollTo({
+        top: document.getElementById(id).offsetTop - 50,
+        behavior: "smooth",
+      });
+    }
+  };
+
+
   return (
     <nav className="navbar navbar-expand-md pt-4" >
       <div className="container m-auto">
@@ -35,26 +46,33 @@ export const Navbar = (props) => {
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 rounded-md-pill ps-2 pe-2 listLinks">
             <li className="nav-item mx-1">
               <Link
+                onClick={()=>{scrollToSection("home")}}
                 className="nav-link active"
                 aria-current="page"
-                href="#home"
-                to={'/#home'}
+                to={'/'}
               >
                 {multilang(Lang).navbar.links[0]}
               </Link>
             </li>
             <li className="nav-item mx-1">
-              <Link className="nav-link" to="/#about">
+              <Link className="nav-link"
+
+              onClick={()=>{scrollToSection("about")}}
+              to="/">
                 {multilang(Lang).navbar.links[1]}
               </Link>
             </li>
             <li className="nav-item mx-1">
-              <Link className="nav-link " to="/#services">
+              <Link className="nav-link "
+              onClick={()=>{scrollToSection("services")}}
+              to="/">
                 {multilang(Lang).navbar.links[3]}
               </Link>
             </li>
             <li className="nav-item mx-1">
-              <Link className="nav-link " to="/#contact">
+              <Link className="nav-link "
+              onClick={()=>{scrollToSection("contact")}}
+               to="/">
                 {multilang(Lang).navbar.connect}
               </Link>
             </li>

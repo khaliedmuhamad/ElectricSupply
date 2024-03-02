@@ -6,7 +6,7 @@ import { MdCleaningServices, MdOutlineCleanHands } from "react-icons/md";
 const Reputation = (props) => {
   let Language = props.lang;
   const ReputationLang = multilang(Language).reputation;
-  const projectLang = multilang(Language).projects.info.paragraph[1];
+  const projectLang = multilang(Language).projects.info.paragraph;
   const reputationData = [
     {
       icon: <MdOutlineCleanHands className="text-primary-emphasis text-xs" />,
@@ -66,9 +66,9 @@ const Reputation = (props) => {
               <h2 className="head-section text-center h2">
                 {ReputationLang.headfirst}
               </h2>
-              <p className="mt-5 text-lg text-bold">{projectLang}</p>
-              <p className="mt-5 text-lg text-bold">{projectLang}</p>
-              <p className="mt-5 text-lg text-bold">{projectLang}</p>
+              <p className="mt-5 text-lg text-bold">{projectLang[0]}</p>
+              <p className="mt-5 text-lg text-bold">{projectLang[1]}</p>
+              <p className="mt-5 text-lg text-bold">{projectLang[2]}</p>
             </div>
           </div>
           <div className="left-cards col-sm-6 col-12">

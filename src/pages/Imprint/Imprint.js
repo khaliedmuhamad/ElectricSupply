@@ -49,11 +49,11 @@ export const Imprint = (props) => {
                 <p className="content-p">
                 SpreeBoPrint
                 <br />
-                {arr2[0]}
+                {arr1[0]}
                 <br />
-                {arr2[1]}
+                {arr1[1]}
                 <br />
-                {arr2[4]}:  webmaster@spreeboprint.de
+                {arr1[4]}:  webmaster@spreeboprint.de
                 <br />
                 </p>
             </div> 
