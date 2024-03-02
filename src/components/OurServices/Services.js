@@ -2,19 +2,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useState } from "react";
 import { multilang } from "../functions/multilingual";
-import { FaSolarPanel } from "react-icons/fa";
-import { BsLifePreserver } from "react-icons/bs";
-import { VscBook } from "react-icons/vsc";
-import trainning from "../../assets/images/services/train.jpg";
-import aftersales from "../../assets/images/services/aftersales.jpg";
-import connect from "../../assets/images/services/connections.jpg";
-import solar from "../../assets/images/services/solar.jpg";
-import trainning2 from "../../assets/images/services/train2.jpg";
-import aftersales2 from "../../assets/images/services/aftersales2.jpg";
-import connect2 from "../../assets/images/services/connections2.jpg";
-import solar2 from "../../assets/images/services/solar2.jpg";
 
-import { TbPlugConnected } from "react-icons/tb";
 import "./Services.css";
 import Slider from "react-slick";
 export const Services = (props) => {
@@ -109,7 +97,7 @@ export const Services = (props) => {
       <div className="container">
         <h2 className="head-section text-center py-5">{servicesLang.header}</h2>
         <div className="d-flex  flex-md-row-reverse  flex-column ">
-          <div className="big-rect col-12 col-md-6 p-2 pb-0">
+          <div className="big-rect col-12 col-md-6 p-2 pb-2">
             <div className="card-overlay text-center d-flex flex-column justify-content-center align-items-center">
               <div className="services-icon text-center">
                 <img
@@ -127,13 +115,12 @@ export const Services = (props) => {
           </div>
 
           <div className="small-rects col-md-6 col-12">
-            
             <div className="d-flex flex-wrap">
               {!servicesData
                 ? ""
                 : servicesData.map((el, n) => {
                     return (
-                      <div className="service-card p-2 col-6 col-md-6 " key={`${el.head}+${n}`}>
+                      <div className="service-card p-2 col-12 col-md-12 " key={`${el.head}+${n}`}>
                         <div
                           className={`card-overlay text-center w-100  d-flex flex-column justify-content-center align-items-center ${
                             n === bigEl.id ? "active" : ""

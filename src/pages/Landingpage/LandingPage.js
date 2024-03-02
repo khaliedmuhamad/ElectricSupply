@@ -13,6 +13,8 @@ import Reputation from "../../components/Reputation/Reputation";
 import { Sponsors } from "../../components/sponsors/Sponsors";
 import { Subscribe } from "../../components/Subscribe/Subscribe";
 import "./LandingPage.css";
+import { Wtswidget } from "../../components/wa-widget/Wtswidget";
+import { multilang } from "../../components/functions/multilingual";
 export const LandingPage = (props) => {
   let Lang = props.lang;
   let dark = props.dark;
@@ -50,20 +52,20 @@ export const LandingPage = (props) => {
 
 
       </div>
-
+      <div className="wa">
+                <Wtswidget /> 
+      </div>
       <Home lang={Lang} />
-
       <Reputation lang={Lang} />
+      <div id='about'>
       <About lang={Lang} />
-      <Sponsors lang={Lang} />
-      
+      </div>
 
+      <Sponsors lang={Lang} />
       <Services lang={Lang} />
       <Subscribe lang={Lang} />
       <Opinions lang={Lang} />
       <Join lang={Lang} />
-
-
     </div>
   );
 };

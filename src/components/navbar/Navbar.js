@@ -4,8 +4,8 @@ import "./Navbar.css";
 import { multilang } from "../functions/multilingual";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { CgSun } from "react-icons/cg";
-import Anochor from "../functions/Anochor";
 import { Link } from "react-router-dom";
+
 
 export const Navbar = (props) => {
   let Lang = props.lang;
@@ -17,10 +17,9 @@ export const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-md pt-4" >
       <div className="container m-auto">
-        <Anochor className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img src={brandLogo} width={150} alt="" />
-    
-        </Anochor>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -35,34 +34,35 @@ export const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 rounded-md-pill ps-2 pe-2 listLinks">
             <li className="nav-item mx-1">
-              <Anochor
+              <Link
                 className="nav-link active"
                 aria-current="page"
                 href="#home"
+                to={'/#home'}
               >
                 {multilang(Lang).navbar.links[0]}
-              </Anochor>
+              </Link>
             </li>
             <li className="nav-item mx-1">
-              <Anochor className="nav-link" href="#about">
+              <Link className="nav-link" to="/#about">
                 {multilang(Lang).navbar.links[1]}
-              </Anochor>
+              </Link>
             </li>
             <li className="nav-item mx-1">
-              <Anochor className="nav-link" href="#projects">
+              <Link className="nav-link" to="/#projects">
                 {multilang(Lang).navbar.links[2]}
-              </Anochor>
+              </Link>
             </li>
 
             <li className="nav-item mx-1">
-              <Anochor className="nav-link " href="#services">
+              <Link className="nav-link " to="/#services">
                 {multilang(Lang).navbar.links[3]}
-              </Anochor>
+              </Link>
             </li>
             <li className="nav-item mx-1">
-              <Anochor className="nav-link " href="#contact">
+              <Link className="nav-link " to="/#contact">
                 {multilang(Lang).navbar.connect}
-              </Anochor>
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav nav-btn-list  mb-2 mb-lg-0 ms-md-4">
@@ -99,7 +99,7 @@ export const Navbar = (props) => {
               </button>
               <ul className="dropdown-menu m-0">
                 <li>
-                  <Anochor
+                  <Link
                     className="dropdown-item"
                     data-language="EN"
                     onClick={(e) => {
@@ -107,10 +107,10 @@ export const Navbar = (props) => {
                     }}
                   >
                     {multilang(Lang).navbar.Language[0].name}
-                  </Anochor>
+                  </Link>
                 </li>
                 <li>
-                  <Anochor
+                  <Link
                     className="dropdown-item"
                     data-language="DE"
                     onClick={(e) => {
@@ -118,7 +118,7 @@ export const Navbar = (props) => {
                     }}
                   >
                     {multilang(Lang).navbar.Language[1].name}
-                  </Anochor>
+                  </Link>
                 </li>
               </ul>
             </li>

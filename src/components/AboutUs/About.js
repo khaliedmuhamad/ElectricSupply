@@ -1,5 +1,5 @@
 import React from "react";
-import { Svgabout } from "../../assets/images/svgabout";
+import  Svgabout  from "../../assets/images/services/aftersales2.png";
 import { multilang } from "../functions/multilingual";
 import "./About.css";
 
@@ -21,7 +21,9 @@ export const About = (props) => {
       <div className="container">
         <div className="d-flex flex-column-reverse flex-md-row">
           <div className="about-left col-10 col-md-5 align-self-center mx-md-0 mx-auto align-self-lg-end ">
-            <div className="about-svg">{<Svgabout />}</div>
+            <div className="about-svg">
+                <img src={Svgabout} className="w-100 h-100 object-fit-cover" alt="" />
+              </div>
           </div>
           <div className="about-right col-12 col-md-7 ">
             <div className=" d-flex flex-column h-100">

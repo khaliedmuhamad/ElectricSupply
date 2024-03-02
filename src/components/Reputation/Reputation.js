@@ -1,31 +1,30 @@
 import React from "react";
 import "./Reputation.css";
 import { multilang } from "../functions/multilingual";
-import { reputationsvg } from "../../assets/images/svgGraphics";
-import { RiCustomerServiceFill } from "react-icons/ri";
-import { MdSecurity } from "react-icons/md";
+import { GiVacuumCleaner } from "react-icons/gi";
+import { MdCleaningServices, MdOutlineCleanHands } from "react-icons/md";
 const Reputation = (props) => {
   let Language = props.lang;
   const ReputationLang = multilang(Language).reputation;
   const projectLang = multilang(Language).projects.info.paragraph[1];
   const reputationData = [
     {
-      icon: reputationsvg.eng,
+      icon: <MdOutlineCleanHands className="text-primary-emphasis text-xs" />,
       head: ReputationLang.head[0],
       paragraph: ReputationLang.paragraph[0],
     },
     {
-      icon: <RiCustomerServiceFill />,
+      icon: <MdCleaningServices className="text-primary-emphasis text-xs" />,
       head: ReputationLang.head[1],
       paragraph: ReputationLang.paragraph[1],
     },
     {
-      icon: <MdSecurity />,
+      icon: <GiVacuumCleaner className="text-primary-emphasis text-xs" />,
       head: ReputationLang.head[2],
       paragraph: ReputationLang.paragraph[2],
     },
     {
-      icon: reputationsvg.eng,
+      icon: <MdOutlineCleanHands className="text-primary-emphasis text-xs" />,
       head: ReputationLang.head[0],
       paragraph: ReputationLang.paragraph[0],
     },

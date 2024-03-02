@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import { subscripe } from "../../assets/images/svgGraphics";
+import  inbox  from "../../assets/images/inbox.png";
 import { multilang } from "../functions/multilingual";
 import "./Subscribe.css";
 import emailjs from "@emailjs/browser";
@@ -53,7 +53,9 @@ export const Subscribe = (props) => {
     <section className="subscribe ">
       <div className="container">
         <div className="d-flex align-items-end">
-          <div className="right col-4 col-md-6">{subscripe}</div>
+          <div className="right col-4 col-md-6">
+            <img src={inbox} alt="" className="w-100 h-100 object-fit-cover"  />  
+          </div>
           <div className="left col-6 col-md-6 align-self-center">
             <div className="d-flex flex-column">
               <div className="top">

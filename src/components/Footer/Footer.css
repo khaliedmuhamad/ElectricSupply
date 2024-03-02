@@ -51,6 +51,7 @@ line-height: 22px;
 color: #FFFFFF;
 }
 .right-top-paragraph{
+    text-decoration: none;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;
@@ -109,4 +110,11 @@ color: rgba(255, 255, 255, 0.67);
             background-color: #270085;
         }
 
+}
+
+.footer label{
+    color: #FFFFFF;
+}
+.footer form{
+    margin: 25px 0 0 0 ;
 }

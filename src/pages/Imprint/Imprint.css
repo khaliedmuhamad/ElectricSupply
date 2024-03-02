@@ -1,0 +1,23 @@
+.Imprint{
+    padding: 200px 0 50px 0;
+}
+.Imprint .header-over {
+    background-color: var(--lighviolet);
+    padding: 25px 0;
+}
+.Imprint .head{
+    color: var(--bg);
+    font-weight: 700;
+    text-align: center;
+}
+.Imprint .content-h6{
+    color:var(--violet);
+    font-size: 18px;
+
+}
+.Imprint .content-p{
+    color:var(--lighviolet);
+    margin: 0 0 0 16px;
+    
+    font-size: 16px;
+}

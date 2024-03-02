@@ -33,15 +33,18 @@
 
 .reputation-card-icon {
   width: 64px;
+  font-size: 10px !important;
 }
 .reputation-card-icon svg {
-  width: 100%;
+  width: 40px;
+  fill:var(--violet) ;
   height: 64px;
+  font-size: 10px !important;
 }
 .reputation-card-head {
   margin-top: 28px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 23px;
   color: var(--violet);
 }

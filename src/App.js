@@ -10,6 +10,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/navbar/Navbar";
+import { Imprint } from "./pages/Imprint/Imprint";
+import { DataProtection } from "./pages/Imprint/DataProtection";
 
 function App() {
   const preferDarkMode = () => {
@@ -63,6 +65,8 @@ function App() {
       <Navbar lang={Lang} Setlanguage={seTlang} dark={dark} setDark={setDark} />
       <Routes>
       <Route element={<LandingPage lang={Lang} dark={dark} />} path="/" />
+      <Route element={<Imprint lang={Lang} dark={dark} />} path="/imprint" />
+      <Route element={<DataProtection lang={Lang} dark={dark} />} path="/dataProtection" />
       </Routes>
       <Footer lang={Lang} />
     </BrowserRouter>

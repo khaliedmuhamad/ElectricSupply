@@ -8,7 +8,7 @@
   background: var(--violet);
   color: var(--FFF) !important;
 }
-.nav-button a{
+.nav-button .nav-link{
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -46,20 +46,20 @@ nav .dropdown-menu {
 .listLinks li {
   text-transform: capitalize;
 }
-.listLinks li a {
+.listLinks li .nav-link {
   color: var(--secondTxt) !important;
   font-weight: 400;
 }
-.listLinks li:hover a {
+.listLinks li:hover .nav-link {
   text-transform: capitalize;
   color: var(--violet) !important;
   font-weight: 500;
 }
-.listLinks li a.active {
+.listLinks li .nav-link.active {
   color: var(--textblue) !important;
   font-weight: 500;
 }
-.listLinks li a:active {
+.listLinks li .nav-link:active {
   color: var(--violet) !important;
   font-weight: 500;
   -webkit-transform: scale(1.1);

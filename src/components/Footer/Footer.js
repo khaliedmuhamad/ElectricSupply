@@ -3,6 +3,7 @@ import  footerBrand  from "../../assets/images/logoDark.png";
 import { multilang } from "../../components/functions/multilingual";
 import { ImFacebook2, ImLinkedin, ImPaypal, ImTwitter } from "react-icons/im";
 import Anochor from "../functions/Anochor";
+import {Link} from "react-router-dom"
 import "./Footer.css";
 import { Map } from "../map/Map";
 import SendMail from "../functions/SendMail";
@@ -81,6 +82,17 @@ export const Footer = (props) => {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="bottom">
+                <h4 className="right-top-head">
+                          {footerLang.middle.head[1]}
+                        </h4>
+                        <Link to="/imprint" className="right-top-paragraph d-block mb-2">
+                          {footerLang.middle.paragraph1}
+                        </Link>
+                        <Link to="/dataProtection" className="right-top-paragraph d-block mt-2">
+                          {footerLang.middle.paragraph2}
+                        </Link>
                 </div>
                 <div className="bottom">
                   <SendMail lang={Language} />

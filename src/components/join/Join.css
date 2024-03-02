@@ -1,10 +1,11 @@
 .join {
   height: 35vh;
   padding: 3rem 0;
-  background-image: url("/public/images/bg-join.png");
+  background-image: url("/public/images/bg-join.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
   position: relative;
   -webkit-box-shadow: -10px -10px 20px var(--shadow1), 10px 10px 30px var(--shadow2);
           box-shadow: -10px -10px 20px var(--shadow1), 10px 10px 30px var(--shadow2);

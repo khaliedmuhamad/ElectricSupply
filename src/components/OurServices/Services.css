@@ -9,18 +9,16 @@
   -webkit-box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.16);
           box-shadow: 28px 28px 50px 2px rgba(0, 39, 80, 0.16);
   border-radius: 32px;
-  min-height: 15vh;
+  min-height: 25px;
   color: var(--violet);
   position: relative;
   z-index: 3 !important;
 }
-
 .big-rect .card-overlay {
   height: 100%;
 }
 .card-overlay .services-icon {
   font-size: 2rem;
-
 }
 .card-overlay .services-head {
   font-weight: 500;
@@ -31,19 +29,17 @@
 }
 .big-rect .card-overlay .services-icon {
   font-size: 8rem;
-  height: 65%;
-  max-height: 80%;
-
+  height: 100%;
+  width: 50%;
   overflow: hidden;
   border-bottom: 5px solid var(--bg);
-  
 }
 .big-rect .card-overlay .services-icon img{
   -o-object-fit: cover;
      object-fit: cover;
 }
 .big-info{
-  height: 20%;
+  height: 100%;
 }
 .big-rect .card-overlay .services-head {
   font-weight: 500;
@@ -101,6 +97,7 @@
 .small-rects{
   max-height: 560px;
   overflow-y: scroll !important;
+  direction: rtl;
 }
 /*/ Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
@@ -118,7 +115,7 @@
     text-transform: capitalize;
   }
   .card-overlay {
-    height: 8vh;
+    height: 40px;
   }
   .big-rect .card-overlay .services-icon {
     font-size: 4rem;
@@ -133,7 +130,7 @@
 /*/ Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .card-overlay {
-    height: 5vh;
+    height: 35px;
   }
   .small-rects{
     max-height: 560px;
