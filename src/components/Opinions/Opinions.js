@@ -79,7 +79,7 @@ const Opinions = (props) => {
             {data
               ? data.map((el, n) => {
                   return (
-                    <div className="py-2" key={`${el.name}+${n}`}>
+                    <div className="py-2" key={n}>
                       <div className="card  bg-transparent border-0">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                           <div className="image-overlay rounded-circle">

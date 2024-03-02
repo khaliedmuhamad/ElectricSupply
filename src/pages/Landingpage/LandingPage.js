@@ -55,6 +55,9 @@ export const LandingPage = (props) => {
       <div className="wa">
                 <Wtswidget /> 
       </div>
+      <div className="zzzz">
+
+
       <Home lang={Lang} />
       <Reputation lang={Lang} />
       <div id='about'>
@@ -66,6 +69,7 @@ export const LandingPage = (props) => {
       <Subscribe lang={Lang} />
       <Opinions lang={Lang} />
       <Join lang={Lang} />
+    </div>
     </div>
   );
 };

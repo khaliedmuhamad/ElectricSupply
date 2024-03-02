@@ -49,12 +49,6 @@ export const Navbar = (props) => {
               </Link>
             </li>
             <li className="nav-item mx-1">
-              <Link className="nav-link" to="/#projects">
-                {multilang(Lang).navbar.links[2]}
-              </Link>
-            </li>
-
-            <li className="nav-item mx-1">
               <Link className="nav-link " to="/#services">
                 {multilang(Lang).navbar.links[3]}
               </Link>

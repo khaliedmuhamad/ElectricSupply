@@ -25,12 +25,14 @@ function SendMail(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
+
     emailjs
       .sendForm(
-        "service_08s6d2s",
-        "template_4z9j2dc",
+        
+        "service_iuu6mha",
+        "template_4r3173y",
         form.current,
-        "jD4T69wgtU2BsOcFu"
+        "Mg5_Sl4j9o-qZny-0"
       )
       .then(
         (result) => {

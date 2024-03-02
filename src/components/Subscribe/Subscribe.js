@@ -32,10 +32,10 @@ export const Subscribe = (props) => {
 
     emailjs
       .sendForm(
-        "service_pvbczu7",
-        "template_4z9j2dc",
+        "service_iuu6mha",
+        "template_kalf0mh",
         form.current,
-        "jD4T69wgtU2BsOcFu"
+        "Mg5_Sl4j9o-qZny-0"
       )
       .then(
         (res) => {
